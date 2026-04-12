@@ -1,0 +1,28 @@
+{
+  "name": "udac",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dayannaEspinal/udac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/dayannaEspinal/udac/issues"
+  },
+  "homepage": "https://github.com/dayannaEspinal/udac#readme",
+  "devDependencies": {
+    "less": "^4.6.4",
+    "vite": "^8.0.8",
+    "vite-plugin-handlebars": "^2.0.0"
+  }
+}
