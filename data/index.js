@@ -16,18 +16,17 @@ function getAllPageContext(page) {
     pageTitle: "UDAC",
 
     navbar: {
-      brand: "UDAC",
-      menu: [
-        { label: "Inicio", href: enAreas ? "index.html" : "#inicio" },
-        { label: "Areas de acción", href: "areasdeaccion.html" },
-        { label: "Objetivos", href: "objetivos.html" },
-        { label: "Nosotros", href: "#nosotros" },
-        { label: "Eventos", href: "#eventos" },
-        { label: "Proyectos", href: "#proyectos" },
-        { label: "Contactanos", href: "#contactanos" },
-      ]
-    },
-
+  brand: "UDAC",
+  menu: [
+    { label: "Inicio", href: "index.html" },
+    { label: "Areas de acción", href: "areasdeaccion.html" },
+    { label: "Objetivos", href: "objetivos.html" },
+    { label: "Nosotros", href: "nosotros.html" },
+    { label: "Eventos", href: "eventos.html" },
+    { label: "Proyectos", href: "#proyectos" },
+    { label: "Contactanos", href: "#contactanos" },
+  ]
+},
     heroTitle: "El bosque sustenta la vida, siembra esperanza y garantiza un futuro sostenible para todos.",
     heroText: "Es donde la naturaleza y la humanidad se encuentran.",
     heroImage: "/img/bosque2.jpg",
