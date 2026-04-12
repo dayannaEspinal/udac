@@ -124,6 +124,75 @@ function getAllPageContext(page) {
       }
     ],
 
+      impactoNumeros: {
+  subtitle: "Cada acción refleja el compromiso de UDAC con la protección ambiental y el desarrollo comunitario.",
+  stats: [
+    {
+      number: "+15,000",
+      label: "Árboles plantados"
+    },
+    {
+      number: "12",
+      label: "Fuentes de agua protegidas"
+    },
+    {
+      number: "+600",
+      label: "Familias beneficiadas"
+    },
+    {
+      number: "18",
+      label: "Comunidades atendidas"
+    }
+  ]
+},
+    objetivosSection: {
+    title: "Acciones conectadas por un mismo propósito",
+    
+    general: {
+      text: "Trabajamos por una Honduras más verde a través de objetivos que integran conservación, educación, participación y sostenibilidad.",
+      icon: "/images/icons/objetivo-general.png"
+    },
+
+    items: [
+      {
+        position: 1,
+        title: "Recursos Naturales",
+        text: "Proteger bosques, ríos y fuentes de agua fundamentales para la vida y el equilibrio ambiental.",
+        icon: "/img/icon-proteccion.jpg"
+      },
+      {
+        position: 2,
+        title: "Biodiversidad",
+        text: "Conservar la flora y fauna de Honduras, preservando sus hábitats y riqueza ecológica.",
+        icon: "/img/icon-biodiversidad.jpg"
+      },
+      {
+        position: 3,
+        title: "Educación Ambiental",
+        text: "Fomentar conciencia ecológica mediante procesos formativos dirigidos a la comunidad.",
+        icon: "/img/icon-educacion.jpg"
+      },
+      {
+        position: 4,
+        title: "Reforestación",
+        text: "Impulsar jornadas de siembra y recuperación de áreas afectadas para restaurar ecosistemas.",
+        icon: "/img/icon-reforestacion.png"
+      },
+      {
+        position: 5,
+        title: "Participación Ciudadana",
+        text: "Motivar a las comunidades a involucrarse en acciones ambientales con compromiso y responsabilidad.",
+        icon: "/img/icon-participacion.jpg"
+      },
+      {
+        position: 6,
+        title: "Prácticas Sostenibles",
+        text: "Promover hábitos responsables como reciclaje, consumo consciente y uso eficiente de recursos.",
+        icon: "/img/icon-sostenibilidad.jpg"
+      }
+    ]
+  },
+  
     contact: {
       sectionTitle: "Contáctanos",
       sectionSubtitle: "¿Tienes alguna pregunta? Estamos aquí para ayudarte",

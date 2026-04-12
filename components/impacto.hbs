@@ -1,0 +1,17 @@
+<section class="impacto">
+  <div class="impacto__container">
+    <div class="impacto__header">
+      <h2>{{impactoNumeros.title}}</h2>
+      <p>{{impactoNumeros.subtitle}}</p>
+    </div>
+
+    <div class="impacto__grid">
+      {{#each impactoNumeros.stats}}
+        <article class="impacto__card">
+          <h3>{{number}}</h3>
+          <p>{{label}}</p>
+        </article>
+      {{/each}}
+    </div>
+  </div>
+</section>

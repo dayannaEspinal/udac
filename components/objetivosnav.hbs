@@ -1,0 +1,43 @@
+<section class="objetivosnav">
+  <div class="objetivosnav-header">
+    <span class="objetivosnav-tag">{{objetivosSection.tag}}</span>
+    <h2>{{objetivosSection.title}}</h2>
+    <p>{{objetivosSection.description}}</p>
+  </div>
+
+  <div class="objetivosnav-orbita">
+    <article class="objetivosnav-centro">
+      <p>{{objetivosSection.general.text}}</p>
+    </article>
+
+    {{#each objetivosSection.items}}
+      <article class="objetivosnav-item objetivosnav-item-{{position}}">
+        <div class="objetivosnav-item-icon">
+          <img src="{{icon}}" alt="{{title}}">
+        </div>
+        <h4>{{title}}</h4>
+        <p>{{text}}</p>
+      </article>
+    {{/each}}
+  </div>
+
+  <div class="objetivosnav-gallery-header">
+    <h3>{{objetivosSection.gallery.title}}</h3>
+    <p>{{objetivosSection.gallery.description}}</p>
+  </div>
+
+  <div class="objetivosnav-gallery-scroll">
+    {{#each objetivosSection.gallery.items}}
+      <article class="objetivosnav-gallery-card">
+        <div class="objetivosnav-gallery-image">
+          <img src="{{image}}" alt="{{title}}">
+        </div>
+        <div class="objetivosnav-gallery-content">
+          <span class="objetivosnav-gallery-category">{{category}}</span>
+          <h4>{{title}}</h4>
+          <p>{{text}}</p>
+        </div>
+      </article>
+    {{/each}}
+  </div>
+</section>
