@@ -1,0 +1,14 @@
+    <h2 class="objectives-title">Objetivos Estratégicos</h2>
+{{#each areasPanel}}
+<section class="half-panel {{layoutClass}}">
+  <div class="panel-image">
+    <img src="{{image}}" alt="{{alt}}">
+  </div>
+
+  <div class="panel-text">
+    <span class="panel-tag">{{tag}}</span>
+    <h2>{{title}}</h2>
+    <p>{{description}}</p>
+  </div>
+</section>
+{{/each}}

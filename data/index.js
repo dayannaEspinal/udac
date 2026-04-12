@@ -20,7 +20,7 @@ function getAllPageContext(page) {
       menu: [
         { label: "Inicio", href: enAreas ? "index.html" : "#inicio" },
         { label: "Areas de acción", href: "areasdeaccion.html" },
-        { label: "Objetivos", href: "#objetivos" },
+        { label: "Objetivos", href: "objetivos.html" },
         { label: "Nosotros", href: "#nosotros" },
         { label: "Eventos", href: "#eventos" },
         { label: "Proyectos", href: "#proyectos" },
@@ -30,25 +30,25 @@ function getAllPageContext(page) {
 
     heroTitle: "El bosque sustenta la vida, siembra esperanza y garantiza un futuro sostenible para todos.",
     heroText: "Es donde la naturaleza y la humanidad se encuentran.",
-    heroImage: "public/img/bosque2.jpg",
+    heroImage: "/img/bosque2.jpg",
 
     cards: [
       {
         title: "Protección del Medio Ambiente",
         text: "Promovemos la conservación de los recursos naturales mediante acciones que protegen el entorno y garantizan un equilibrio sostenible entre la naturaleza y la comunidad.",
-        image: "public/img/niña.jpg",
+        image: "/img/niña.jpg",
         alt: "Protección del Medio Ambiente"
       },
       {
         title: "Conservación de la Biodiversidad",
         text: "Trabajamos en la protección de la flora y la fauna, preservando los ecosistemas y fomentando el respeto por la vida silvestre.",
-        image: "public/img/colibri.jpg",
+        image: "/img/colibri.jpg",
         alt: "Conservación de la Biodiversidad"
       },
       {
         title: "Desarrollo Comunitario Sostenible",
         text: "Impulsamos iniciativas que fortalecen a las comunidades mediante educación ambiental, participación ciudadana y prácticas sostenibles.",
-        image: "public/img/cultivocafe2.jpg",
+        image: "/img/cultivocafe2.jpg",
         alt: "Desarrollo Comunitario Sostenible"
       }
     ],
@@ -57,40 +57,72 @@ function getAllPageContext(page) {
       {
         title: "Protección de recursos naturales",
         text: "Promover acciones que protejan los ecosistemas y los recursos naturales de las comunidades.",
-        icon: "public/img/icon-proteccion.jpg"
+        icon: "/img/icon-proteccion.jpg"
       },
       {
         title: "Conservación de la biodiversidad",
         text: "Impulsar iniciativas orientadas a la preservación de flora, fauna y hábitats naturales.",
-        icon: "public/img/icon-biodiversidad.jpg"
+        icon: "/img/icon-biodiversidad.jpg"
       },
       {
         title: "Educación ambiental",
         text: "Fomentar el conocimiento y la conciencia ecológica en niños, jóvenes y adultos.",
-        icon: "public/img/icon-educacion.jpg"
+        icon: "/img/icon-educacion.jpg"
       },
       {
         title: "Reforestación comunitaria",
         text: "Organizar jornadas de reforestación para restaurar áreas degradadas y fortalecer el entorno natural.",
-        icon: "public/img/icon-reforestacion.png"
+        icon: "/img/icon-reforestacion.png"
       },
       {
         title: "Participación ciudadana",
         text: "Involucrar a la comunidad en actividades de protección ambiental y desarrollo sostenible.",
-        icon: "public/img/icon-comunitaria.jpeg"
+        icon: "/img/icon-comunitaria.jpeg"
       },
       {
         title: "Prácticas sostenibles",
         text: "Difundir hábitos responsables y sostenibles que contribuyan al bienestar ambiental y social.",
-        icon: "public/img/icon-sostenibilidad.jpg"
+        icon: "/img/icon-sostenibilidad.jpg"
       }
     ],
 
     panelTitle: "Los bosques de Honduras bajo amenaza",
-    panelText: "Más del 60 % del territorio hondureño está cubierto por bosques biodiversos que albergan paisajes espectaculares, así como también,  flora y fauna diversa. Sin embargo, estos ecosistemas están siendo rápidamente degradados por invasiones ilegales de tierras y áreas protegidas, tala no autorizada, expansión de la agricultura y ganadería, y proyectos de infraestructura.",
+    panelText: "Más del 60 % del territorio hondureño está cubierto por bosques biodiversos que albergan paisajes espectaculares, así como también, flora y fauna diversa. Sin embargo, estos ecosistemas están siendo rápidamente degradados por invasiones ilegales de tierras y áreas protegidas, tala no autorizada, expansión de la agricultura y ganadería, y proyectos de infraestructura.",
     panelText2: "Estas amenazas no solo destruyen los bosques, sino que también afectan gravemente a las comunidades locales, ya que aproximadamente el 40 % de la población depende de los recursos forestales para su subsistencia.",
-    panelImage: "public/img/incendiodanli.jpg",
+    panelImage: "/img/incendiodanli.jpg",
     panelAlt: "Incendio forestal",
+
+    // 🔥 AREAS DE ACCIÓN (PARA HERO PANEL)
+    areasPanel: [
+      {
+        layoutClass: "normal",
+        title: "Reforestación comunitaria",
+        description: "Impulsamos jornadas de reforestación para recuperar áreas degradadas, fortalecer los ecosistemas y promover la participación activa de la comunidad en la protección del entorno natural.",
+        image: "/img/reforestacion2.jpg",
+        alt: "Reforestación comunitaria"
+      },
+      {
+        layoutClass: "reverse",
+        title: "Protección de recursos naturales",
+        description: "Promovemos acciones enfocadas en el cuidado del agua, el suelo y los bosques, fomentando prácticas responsables que aseguren la sostenibilidad ambiental.",
+        image: "/img/recoleccionbasura.jpg",
+        alt: "Protección de recursos naturales"
+      },
+      {
+        layoutClass: "normal",
+        title: "Conservación de la biodiversidad",
+        description: "Trabajamos en la preservación de la flora y fauna local, protegiendo los hábitats naturales y concientizando a la población sobre la importancia del equilibrio ecológico.",
+        image: "/img/areaprotegida.jpg",
+        alt: "Conservación de la biodiversidad"
+      },
+      {
+        layoutClass: "reverse",
+        title: "Educación ambiental",
+        description: "Desarrollamos actividades educativas dirigidas a niños, jóvenes y adultos para fortalecer la conciencia ecológica y fomentar hábitos sostenibles.",
+        image: "/img/educacionambiental.jpg",
+        alt: "Educación ambiental"
+      }
+    ],
 
     contact: {
       sectionTitle: "Contáctanos",
@@ -122,7 +154,7 @@ function getAllPageContext(page) {
     },
 
     footer: {
-      brand: "Unidad de Desarrollo Ambiental y Comunitario (UDAC) ",
+      brand: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
       description: "La responsabilidad de hoy es la supervivencia del mañana.",
       contact: {
         title: "Contáctanos",
@@ -140,7 +172,7 @@ function getAllPageContext(page) {
         ]
       },
 
-      copyright: "© 2026 Unidad de Desarrollo Ambiental y Comunitario (UDAC) . Todos los derechos reservados."
+      copyright: "© 2026 UDAC. Todos los derechos reservados."
     }
   };
 }
