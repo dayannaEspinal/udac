@@ -24,5 +24,8 @@
     "less": "^4.6.4",
     "vite": "^8.0.8",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "glob": "^13.0.6"
   }
 }

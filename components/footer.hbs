@@ -1,12 +1,10 @@
 <footer class="footer">
   <div class="footer-container">
-
     <div class="footer-section">
       <h3 class="footer-title">{{footer.brand}}</h3>
-      <p class="footer-description">
-        {{footer.description}}
-      </p>
+      <p class="footer-description">{{footer.description}}</p>
     </div>
+
     <div class="footer-section">
       <h4 class="footer-heading">{{footer.contact.title}}</h4>
       <ul class="footer-list">
@@ -18,25 +16,19 @@
         {{/each}}
       </ul>
     </div>
-    <div class="footer-section">
-      <h4 class="footer-heading">{{footer.horarios.title}}</h4>
-      <ul class="footer-list">
-        {{#each footer.horarios.items}}
-          <li>{{this}}</li>
-        {{/each}}
-      </ul>
-    </div>
+
     <div class="footer-section">
       <h4 class="footer-heading">{{footer.social.title}}</h4>
       <div class="social-links">
         {{#each footer.social.links}}
-          <a href="{{href}}" class="social-link {{class}}" target="_blank">
+          <a href="{{href}}" class="social-link {{class}}" target="_blank" rel="noopener noreferrer">
             {{text}}
           </a>
         {{/each}}
       </div>
     </div>
   </div>
+
   <div class="footer-bottom">
     <p>{{footer.copyright}}</p>
   </div>

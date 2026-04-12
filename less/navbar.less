@@ -1,40 +1,91 @@
 @import "variables.less";
+
 .site-header {
-    background: black;
-    width: 100%;
+  background: #ffffff; // fondo blanco
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+
+    padding: 1rem 20px;   // 👈 menos espacio lateral
+    width: 100%;
 }
 
-.logo {
-    margin: 0;
-    color: white;
+.logo-link {
+  display: flex;
+  align-items: center;
 }
 
+.logo-img {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* LINKS */
 .nav-links {
-    list-style: none;   
-    display: flex;      
-    gap: 2rem;          
-    margin: 0;
-    padding: 0;
-    align-items: center;
-}
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
 
-.nav-links li {
-    list-style: none;  
-}
+  li {
+    list-style: none;
+  }
 
-.nav-links a {
-    color: white;
+  a {
+    color: #222; // negro
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:hover {
+      color: @primary-color; // verde UDAC
+    }
+
+    // 🔥 línea animada
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -4px;
+      width: 0%;
+      height: 2px;
+      background: @primary-color;
+      transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
 }
 
-.nav-links a:hover {
-    color: #d6d6d6;
+/* 📱 RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .logo-img {
+    height: 45px;
+  }
 }

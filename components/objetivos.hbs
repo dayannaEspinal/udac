@@ -1,0 +1,15 @@
+<section class="objectives-section" id="objetivos">
+  <div class="container">
+    <h2 class="objectives-title">Objetivos Estratégicos</h2>
+
+    <div class="objectives-grid">
+      {{#each objetivos}}
+        <article class="objective-card">
+          <img src="{{icon}}" alt="{{title}}" class="objective-icon">
+          <h3>{{title}}</h3>
+          <p>{{text}}</p>
+        </article>
+      {{/each}}
+    </div>
+  </div>
+</section>
