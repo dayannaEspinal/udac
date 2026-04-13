@@ -226,7 +226,9 @@ eventos: {
       image: "/img/limpiezacomunitaria.jpg"
     }
   ]
+  
 },
+
 nosotros: {
   hero: {
     title: "¿Quiénes somos?",
