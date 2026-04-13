@@ -27,7 +27,7 @@
 
   </div>
 
-  <!-- LINKS -->
+  
   <div class="links">
     <h3>Explora más</h3>
 
@@ -50,29 +50,31 @@
     </div>
   </div>
 
-  <!-- VIDEO -->
+ 
   <div class="video-section">
     <h3>Conoce nuestras actividades</h3>
     <iframe src="{{eventos.video}}" frameborder="0" allowfullscreen></iframe>
   </div>
 
-  <!-- DESTACADO -->
-  <section class="highlight">
+ <section class="highlight">
+
+  <img class="highlight-bg" src="{{eventos.extra.highlight.bg}}" alt="fondo">
+
+  <div class="highlight-overlay"></div>
+
+  <div class="highlight-content">
+
     <h2>{{eventos.extra.highlight.title}}</h2>
     <p>{{eventos.extra.highlight.text}}</p>
+
     <a href="{{eventos.extra.highlight.link}}" class="btn-highlight">
       {{eventos.extra.highlight.button}}
     </a>
-  </section>
 
-  <!-- GALERÍA -->
-  <section class="gallery">
-    {{#each eventos.extra.gallery}}
-      <img src="{{this}}" alt="evento">
-    {{/each}}
-  </section>
+  </div>
 
-  <!-- TESTIMONIOS -->
+</section>
+  
   <section class="testimonials">
 
     {{#each eventos.extra.testimonials}}
