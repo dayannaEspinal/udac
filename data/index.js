@@ -91,7 +91,7 @@ function getAllPageContext(page) {
     panelImage: "/img/incendiodanli.jpg",
     panelAlt: "Incendio forestal",
 
-    // 🔥 AREAS DE ACCIÓN (PARA HERO PANEL)
+    
     areasPanel: [
       {
         layoutClass: "normal",
@@ -191,6 +191,21 @@ function getAllPageContext(page) {
       }
     ]
   },
+
+
+      galleryText: "Acciones que transforman",
+      galleryImages: [
+        { src: "/img/reforestacion3.jpg", alt: "Reforestacion" },
+        { src: "/img/limpiezarios.jpg", alt: "Limpieza de rios" },
+        { src: "/img/recoleccionbasura.jpg", alt: "Recoleccion de basura" },
+        { src: "/img/ganaderiasostenible.jpg", alt: "Ganderia sostenible" },
+        { src: "/img/composta.jpg", alt: "Composta" },
+        { src: "/img/reforestacion4.jpg", alt: "Reforestacion4" },
+        { src: "/img/niña.jpg", alt: "niña comunidad" },
+        { src: "/img/limpiezarios2.jpg", alt: "Limpieza rios" },
+        { src: "/img/cultivocafe.jpg", alt: "Cultivo cafe sostenible" },
+],
+
   
     contact: {
       sectionTitle: "Contáctanos",
