@@ -1,6 +1,35 @@
 .hero-eventos {
-  background: url('/img/reforestacion2.jpg') center/cover no-repeat;
-  color: white;
-  padding: 100px 20px;
+  position: relative;
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url('/img/reforestacion2.jpg') center/cover no-repeat;
+
+  color: #fff;
+  padding: 160px 20px;
   text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 12px rgba(0, 0, 0, 0.9);
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.9);
+  }
 }
