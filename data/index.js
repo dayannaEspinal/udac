@@ -180,6 +180,7 @@ function getAllPageContext(page) {
       ]
     },
 
+<<<<<<< HEAD
 
       galleryTitle: "Acciones que transforman",
       galleryImages: [
@@ -196,6 +197,124 @@ function getAllPageContext(page) {
 
   
     contact: {
+=======
+    items: [
+      {
+        position: 1,
+        title: "Recursos Naturales",
+        text: "Proteger bosques, ríos y fuentes de agua fundamentales para la vida y el equilibrio ambiental.",
+        icon: "/img/icon-proteccion.jpg"
+      },
+      {
+        position: 2,
+        title: "Biodiversidad",
+        text: "Conservar la flora y fauna de Honduras, preservando sus hábitats y riqueza ecológica.",
+        icon: "/img/icon-biodiversidad.jpg"
+      },
+      {
+        position: 3,
+        title: "Educación Ambiental",
+        text: "Fomentar conciencia ecológica mediante procesos formativos dirigidos a la comunidad.",
+        icon: "/img/icon-educacion.jpg"
+      },
+      {
+        position: 4,
+        title: "Reforestación",
+        text: "Impulsar jornadas de siembra y recuperación de áreas afectadas para restaurar ecosistemas.",
+        icon: "/img/icon-reforestacion.png"
+      },
+      {
+        position: 5,
+        title: "Participación Ciudadana",
+        text: "Motivar a las comunidades a involucrarse en acciones ambientales con compromiso y responsabilidad.",
+        icon: "/img/icon-participacion.jpg"
+      },
+      {
+        position: 6,
+        title: "Prácticas Sostenibles",
+        text: "Promover hábitos responsables como reciclaje, consumo consciente y uso eficiente de recursos.",
+        icon: "/img/icon-sostenibilidad.jpg"
+      }
+    ]
+  },
+heroEventos: {
+  title: "Eventos ambientales y comunitarios",
+  text: "Acciones reales que transforman el entorno y fortalecen la conciencia ambiental.",
+  image: "/img/eventos.jpg"
+},
+
+eventos: {
+  title: "Agenda de eventos UDAC",
+  subtitle: "Participa en actividades de impacto ambiental y social",
+
+  video: "https://www.youtube.com/embed/1w9pC8x5w3Q",
+
+  items: [
+    {
+      title: "Reforestación Masiva",
+      desc: "Jornada comunitaria de siembra de árboles para restaurar áreas degradadas y fortalecer ecosistemas locales.",
+      date: "Abril 2026",
+      location: "Zona rural de Danlí",
+      image: "/img/reforestacion.jpg"
+    },
+    {
+      title: "Educación Ambiental",
+      desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad dirigidos a jóvenes y adultos.",
+      date: "Mayo 2026",
+      location: "Centro comunitario UDAC",
+      image: "/img/educacionambiental.jpg"
+    },
+    {
+      title: "Limpieza Ecológica",
+      desc: "Campaña de limpieza de ríos y espacios públicos para reducir contaminación y proteger fuentes de agua.",
+      date: "Junio 2026",
+      location: "Río local y zonas urbanas",
+      image: "/img/limpiezacomunitaria.jpg"
+    }
+  ]
+}, 
+  nosotros: {
+  hero: {
+    title: "¿Quiénes somos?",
+    subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
+    image: "/video/montaña.gif"
+  },
+
+  intro: {
+    title: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
+    text: "Somos una organización dedicada a la protección del medio ambiente y el desarrollo sostenible de comunidades en Honduras.",
+    text2: "Impulsamos proyectos de reforestación, educación ambiental, limpieza comunitaria y conservación de recursos naturales."
+  },
+
+  misionVision: {
+    mision: "Promover acciones ambientales sostenibles mediante educación y participación comunitaria.",
+    vision: "Ser una organización líder en transformación ambiental y social en Honduras."
+  },
+
+  proyectos: [
+    {
+      title: "Reforestación",
+      desc: "Restauración de áreas verdes mediante la siembra de árboles.",
+      image: "/img/proyecto1.jpg"
+    },
+    {
+      title: "Educación Ambiental",
+      desc: "Formación en temas ecológicos para jóvenes y comunidades.",
+      image: "/img/charlascolegios.jpg"
+    },
+    {
+      title: "Limpieza Comunitaria",
+      desc: "Campañas de limpieza en ríos, calles y espacios públicos.",
+      image: "/img/limpiezarios.jpg"
+    },
+    {
+      title: "Conservación",
+      desc: "Protección de flora y fauna en zonas vulnerables.",
+      image: "/img/conservacion.jpg"
+    }
+  ]
+},    contact: {
+>>>>>>> 68794de (Actualización)
       sectionTitle: "Contáctanos",
       sectionSubtitle: "¿Tienes alguna pregunta? Estamos aquí para ayudarte",
       contactInfo: {
