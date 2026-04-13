@@ -23,8 +23,8 @@ function getAllPageContext(page) {
     { label: "Objetivos", href: "objetivos.html" },
     { label: "Nosotros", href: "nosotros.html" },
     { label: "Eventos", href: "eventos.html" },
-    { label: "Proyectos", href: "#proyectos" },
-    { label: "Contactanos", href: "#contactanos" },
+    { label: "Proyectos", href: "proyectos.html" },
+    { label: "Contactanos", href: "contactanos.html" },
   ]
 },
     heroTitle: "El bosque sustenta la vida, siembra esperanza y garantiza un futuro sostenible para todos.",
@@ -194,7 +194,55 @@ function getAllPageContext(page) {
         { src: "/img/cultivocafe.jpg", alt: "Cultivo cafe sostenible" },
 ],
 
-  
+    proyectosData: {
+      title: "Nuestros Proyectos",
+      subtitle: "Iniciativas que transforman comunidades y protegen nuestro entorno.",
+      items: [
+        {
+          name: "Vivero Forestal Comunitario",
+          description: "Creación de un vivero para cultivar especies nativas y reforestar las principales cuencas hídricas de Danlí.",
+          image: "/img/Vivero_Forestal.jpg",
+          alt: "Vivero forestal",
+          status: "En curso"
+        },
+        {
+          name: "Educación Ambiental Escolar",
+          description: "Programa de talleres interactivos en escuelas rurales sobre reciclaje y cuidado del agua.",
+          image: "/img/Educacion_Ambiental.jpg",
+          alt: "Educación ambiental",
+          status: "Activo"
+        },
+        {
+          name: "Agricultura Sostenible",
+          description: "Apoyo a productores locales para la transición hacia prácticas agroecológicas y conservación del suelo.",
+          image: "/img/Agricultura_Sostenible.jpg",
+          alt: "Agricultura sostenible",
+          status: "En curso"
+        },
+        {
+          name: "Ganadería Sostenible",
+          description: "Implementación de sistemas silvopastoriles que combinan árboles y pastizales para mejorar la producción sin deforestar.",
+          image: "/img/Ganaderia_Sostenible.jpg",
+          alt: "Ganadería sostenible",
+          status: "Activo"
+        },
+        {
+          name: "Cultivo de Café Sostenible",
+          description: "Promoción de técnicas de cultivo bajo sombra para proteger la biodiversidad y garantizar un grano de alta calidad.",
+          image: "/img/Cultivo_Cafe.jpg",
+          alt: "Café sostenible",
+          status: "Planificación"
+        },
+        {
+          name: "Composta en Casa",
+          description: "Talleres comunitarios para transformar residuos orgánicos en abono natural, reduciendo la contaminación ambiental.",
+          image: "/img/Composta_Casa.jpg",
+          alt: "Composta casera",
+          status: "Activo"
+        }
+      ]
+    },
+
     contact: {
       sectionTitle: "Contáctanos",
       sectionSubtitle: "¿Tienes alguna pregunta? Estamos aquí para ayudarte",

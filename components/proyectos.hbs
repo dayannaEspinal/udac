@@ -1,0 +1,21 @@
+<section class="proyectos">
+  <div class="container">
+    <h2>{{proyectosData.title}}</h2>
+    <p class="subtitle">{{proyectosData.subtitle}}</p>
+
+    <div class="proyectos-grid">
+      {{#each proyectosData.items}}
+      <div class="proyecto-card">
+        <div class="img-container">
+          <img src="{{this.image}}" alt="{{this.alt}}">
+        </div>
+        <div class="proyecto-content">
+          <span class="estado-badge">{{this.status}}</span>
+          <h3>{{this.name}}</h3>
+          <p>{{this.description}}</p>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</section>

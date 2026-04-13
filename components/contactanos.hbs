@@ -1,0 +1,42 @@
+<section class="contactanos">
+  <div class="container">
+    <h2>{{contact.sectionTitle}}</h2>
+    <p class="subtitle">{{contact.sectionSubtitle}}</p>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>{{contact.contactInfo.title}}</h3>
+        
+        <div class="info-item">
+          <h4>Teléfonos</h4>
+          {{#each contact.contactInfo.phones}}
+            <p>{{this}}</p>
+          {{/each}}
+        </div>
+
+        <div class="info-item">
+          <h4>Correo Electrónico</h4>
+          {{#each contact.contactInfo.emails}}
+            <p>{{this}}</p>
+          {{/each}}
+        </div>
+
+        <div class="info-item">
+          <h4>Dirección</h4>
+          {{#each contact.contactInfo.address}}
+            <p>{{this}}</p>
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Tu Nombre Completo" required>
+          <input type="email" placeholder="Tu Correo Electrónico" required>
+          <textarea placeholder="¿En qué te podemos ayudar?" rows="5" required></textarea>
+          <button type="submit" class="btn-primario">Enviar Mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
