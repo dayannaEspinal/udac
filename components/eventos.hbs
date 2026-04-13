@@ -27,11 +27,12 @@
 
   </div>
 
-  <!-- ENLACES -->
+  <!-- LINKS -->
   <div class="links">
     <h3>Explora más</h3>
 
     <div class="link-box">
+
       {{#each eventos.links}}
 
         {{#if this.external}}
@@ -45,19 +46,42 @@
         {{/if}}
 
       {{/each}}
+
     </div>
   </div>
 
   <!-- VIDEO -->
   <div class="video-section">
     <h3>Conoce nuestras actividades</h3>
-
-    <iframe 
-      src="{{eventos.video}}" 
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-
+    <iframe src="{{eventos.video}}" frameborder="0" allowfullscreen></iframe>
   </div>
+
+  <!-- DESTACADO -->
+  <section class="highlight">
+    <h2>{{eventos.extra.highlight.title}}</h2>
+    <p>{{eventos.extra.highlight.text}}</p>
+    <a href="{{eventos.extra.highlight.link}}" class="btn-highlight">
+      {{eventos.extra.highlight.button}}
+    </a>
+  </section>
+
+  <!-- GALERÍA -->
+  <section class="gallery">
+    {{#each eventos.extra.gallery}}
+      <img src="{{this}}" alt="evento">
+    {{/each}}
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="testimonials">
+
+    {{#each eventos.extra.testimonials}}
+    <div class="testimonial">
+      <p>{{this.text}}</p>
+      <span>{{this.name}}</span>
+    </div>
+    {{/each}}
+
+  </section>
 
 </section>

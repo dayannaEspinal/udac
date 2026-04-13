@@ -206,10 +206,10 @@ eventos: {
       text: "Sobre Nosotros",
       url: "/nosotros.html"
     },
-    {
-      text: "Contáctanos",
-      url: "/contacto.html"
-    },
+   {
+  text: "Áreas de acción",
+  url: "/areasdeaccion.html"
+},
     {
       text: "Facebook UDAC",
       url: "https://facebook.com",
@@ -227,19 +227,50 @@ eventos: {
     },
     {
       title: "Educación Ambiental",
-      desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad dirigidos a jóvenes y adultos.",
+      desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad.",
       date: "Mayo 2026",
       location: "Centro comunitario UDAC",
       image: "/img/charla.jpg"
     },
     {
       title: "Limpieza Ecológica",
-      desc: "Campaña de limpieza de ríos y espacios públicos para reducir contaminación y proteger fuentes de agua.",
+      desc: "Campaña de limpieza de ríos y espacios públicos para reducir contaminación.",
       date: "Junio 2026",
       location: "Río Choluteca, Danlí",
       image: "/img/limpiezarios.jpg"
     }
-  ]
+  ],
+
+  extra: {
+    highlight: {
+      title: "Únete al cambio",
+      text: "Cada acción cuenta. Participa en nuestros eventos y ayuda a transformar el medio ambiente en Honduras.",
+      button: "Quiero participar",
+      link: "/contacto.html"
+    },
+
+    gallery: [
+      "/img/proyectoecologico.jpg",
+      "/img/conservarflora.jpg",
+      "/img/conservarfauna.jpg",
+      "/img/reunionecologica.jpg"
+    ],
+
+    testimonials: [
+      {
+        text: "Una experiencia increíble, aprendí mucho sobre el medio ambiente.",
+        name: "María López"
+      },
+      {
+        text: "Me encantó participar en la reforestación.",
+        name: "Carlos Méndez"
+      },
+      {
+        text: "Excelente organización y muy buen ambiente.",
+        name: "Ana García"
+      }
+    ]
+  }
 },
 nosotros: {
   hero: {
