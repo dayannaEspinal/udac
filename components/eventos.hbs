@@ -9,7 +9,7 @@
     <div class="card">
 
       <div class="img-box">
-        <img src="{{this.image}}" alt="evento">
+        <img src="{{this.image}}" alt="{{this.title}}">
       </div>
 
       <div class="info">
@@ -17,8 +17,8 @@
         <p>{{this.desc}}</p>
 
         <div class="meta">
-          <span>📅 {{this.date}}</span>
-          <span>📍 {{this.location}}</span>
+          <span>{{this.date}}</span>
+          <span>{{this.location}}</span>
         </div>
       </div>
 
@@ -27,20 +27,29 @@
 
   </div>
 
-  <div class="info-extra">
+  <!-- ENLACES -->
+  <div class="links">
+    <h3>Explora más</h3>
 
-    {{#each eventos.extra}}
-    <div class="box">
-      <h3>{{this.title}}</h3>
-      <p>{{this.text}}</p>
+    <div class="link-box">
+      {{#each eventos.links}}
+
+        {{#if this.external}}
+          <a href="{{this.url}}" class="btn" target="_blank">
+            {{this.text}}
+          </a>
+        {{else}}
+          <a href="{{this.url}}" class="btn">
+            {{this.text}}
+          </a>
+        {{/if}}
+
+      {{/each}}
     </div>
-    {{/each}}
-
   </div>
 
-
+  <!-- VIDEO -->
   <div class="video-section">
-
     <h3>Conoce nuestras actividades</h3>
 
     <iframe 

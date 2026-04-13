@@ -197,7 +197,25 @@ eventos: {
   title: "Agenda de eventos UDAC",
   subtitle: "Participa en actividades de impacto ambiental y social",
 
+  image: "/img/eventos.jpg",
+
   video: "https://www.youtube.com/embed/1w9pC8x5w3Q",
+
+  links: [
+    {
+      text: "Sobre Nosotros",
+      url: "/nosotros.html"
+    },
+    {
+      text: "Contáctanos",
+      url: "/contacto.html"
+    },
+    {
+      text: "Facebook UDAC",
+      url: "https://facebook.com",
+      external: true
+    }
+  ],
 
   items: [
     {
