@@ -1,22 +1,19 @@
-<section class="objetivosnav">
-  <div class="objetivosnav-header">
-    <span class="objetivosnav-tag">{{objetivosSection.tag}}</span>
+<section class="objetivosflow">
+  <div class="objetivosflow-header">
     <h2>{{objetivosSection.title}}</h2>
     <p>{{objetivosSection.description}}</p>
   </div>
 
-  <div class="objetivosnav-orbita">
-    <article class="objetivosnav-centro">
-      <p>{{objetivosSection.general.text}}</p>
-    </article>
-
+  <div class="objetivosflow-grid">
     {{#each objetivosSection.items}}
-      <article class="objetivosnav-item objetivosnav-item-{{position}}">
-        <div class="objetivosnav-item-icon">
+      <article class="objetivosflow-card">
+        <div class="objetivosflow-icon">
           <img src="{{icon}}" alt="{{title}}">
         </div>
-        <h4>{{title}}</h4>
-        <p>{{text}}</p>
+        <h3>{{title}}</h3>
+        <div class="objetivosflow-content">
+          <p>{{text}}</p>
+        </div>
       </article>
     {{/each}}
   </div>
@@ -33,7 +30,6 @@
           <img src="{{image}}" alt="{{title}}">
         </div>
         <div class="objetivosnav-gallery-content">
-
           <span class="objetivosnav-gallery-category">{{category}}</span>
           <h4>{{title}}</h4>
           <p>{{text}}</p>

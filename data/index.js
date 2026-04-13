@@ -91,7 +91,7 @@ function getAllPageContext(page) {
     panelImage: "/img/incendiodanli.jpg",
     panelAlt: "Incendio forestal",
 
-    
+
     areasPanel: [
       {
         layoutClass: "normal",
@@ -124,76 +124,64 @@ function getAllPageContext(page) {
     ],
 
       impactoNumeros: {
-  subtitle: "Cada acción refleja el compromiso de UDAC con la protección ambiental y el desarrollo comunitario.",
-  stats: [
-    {
-      number: "+15,000",
-      label: "Árboles plantados"
-    },
-    {
-      number: "12",
-      label: "Fuentes de agua protegidas"
-    },
-    {
-      number: "+600",
-      label: "Familias beneficiadas"
-    },
-    {
-      number: "18",
-      label: "Comunidades atendidas"
-    }
-  ]
+          title: "Cada acción refleja el compromiso de UDAC con la protección ambiental y el desarrollo comunitario.",
+          stats: [
+            {
+              number: "+15,000",
+              label: "Árboles plantados"
+            },
+            {
+              number: "12",
+              label: "Fuentes de agua protegidas"
+            },
+            {
+              number: "+600",
+              label: "Familias beneficiadas"
+            },
+            {
+              number: "18",
+              label: "Comunidades atendidas"
+            }
+          ]
 },
-    objetivosSection: {
-    title: "Acciones conectadas por un mismo propósito",
-    
-    general: {
-      text: "Trabajamos por una Honduras más verde a través de objetivos que integran conservación, educación, participación y sostenibilidad.",
-      icon: "/images/icons/objetivo-general.png"
+      objetivosSection: {
+      objetivosTitle: "Trabajamos por una Honduras más verde a través de objetivos que integran conservación, educación, participación y sostenibilidad.",
+      items: [
+        {
+          title: "Recursos Naturales",
+          text: "Proteger bosques, ríos y fuentes de agua fundamentales para la vida y el equilibrio ambiental.",
+          icon: "/img/icon-proteccion2.png"
+        },
+        {
+          title: "Biodiversidad",
+          text: "Conservar la flora y fauna de Honduras, preservando sus hábitats y riqueza ecológica.",
+          icon: "/img/icon-biodiversidad2.png"
+        },
+        {
+          title: "Educación Ambiental",
+          text: "Fomentar conciencia ecológica mediante procesos formativos dirigidos a la comunidad.",
+          icon: "/img/icon-educacion2.png"
+        },
+        {
+          title: "Participación Ciudadana",
+          text: "Motivar a las comunidades a involucrarse en acciones ambientales con compromiso y responsabilidad.",
+          icon: "/img/icon-participacion2.png"
+        },
+        {
+          title: "Prácticas Sostenibles",
+          text: "Promover hábitos responsables como reciclaje, consumo consciente y uso eficiente de recursos.",
+          icon: "/img/icon-sostenibilidad2.png"
+        },
+        {
+          title: "Reforestación",
+          text: "Impulsar jornadas de siembra y recuperación de áreas afectadas para restaurar ecosistemas.",
+          icon: "/img/icon-reforestacion2.png"
+        }
+      ]
     },
 
-    items: [
-      {
-        position: 1,
-        title: "Recursos Naturales",
-        text: "Proteger bosques, ríos y fuentes de agua fundamentales para la vida y el equilibrio ambiental.",
-        icon: "/img/icon-proteccion.jpg"
-      },
-      {
-        position: 2,
-        title: "Biodiversidad",
-        text: "Conservar la flora y fauna de Honduras, preservando sus hábitats y riqueza ecológica.",
-        icon: "/img/icon-biodiversidad.jpg"
-      },
-      {
-        position: 3,
-        title: "Educación Ambiental",
-        text: "Fomentar conciencia ecológica mediante procesos formativos dirigidos a la comunidad.",
-        icon: "/img/icon-educacion.jpg"
-      },
-      {
-        position: 4,
-        title: "Reforestación",
-        text: "Impulsar jornadas de siembra y recuperación de áreas afectadas para restaurar ecosistemas.",
-        icon: "/img/icon-reforestacion.png"
-      },
-      {
-        position: 5,
-        title: "Participación Ciudadana",
-        text: "Motivar a las comunidades a involucrarse en acciones ambientales con compromiso y responsabilidad.",
-        icon: "/img/icon-participacion.jpg"
-      },
-      {
-        position: 6,
-        title: "Prácticas Sostenibles",
-        text: "Promover hábitos responsables como reciclaje, consumo consciente y uso eficiente de recursos.",
-        icon: "/img/icon-sostenibilidad.jpg"
-      }
-    ]
-  },
 
-
-      galleryText: "Acciones que transforman",
+      galleryTitle: "Acciones que transforman",
       galleryImages: [
         { src: "/img/reforestacion3.jpg", alt: "Reforestacion" },
         { src: "/img/limpiezarios.jpg", alt: "Limpieza de rios" },
@@ -217,23 +205,7 @@ function getAllPageContext(page) {
         address: ["Col. La Majada, Danli", "El Paraiso, Honduras"],
         hours: ["Lunes a sabado", "24 horas"]
       },
-      form: {
-        nombre: { label: "Nombre Completo *", placeholder: "Ingresa tu nombre", required: true },
-        email: { label: "Email *", placeholder: "tu@email.com", required: true },
-        telefono: { label: "Teléfono *", placeholder: "+504 0000-0000", required: true },
-        asunto: {
-          label: "Asunto",
-          options: [
-            { value: "", text: "Selecciona un asunto" },
-            { value: "informacion", text: "Información General" },
-            { value: "eventos", text: "Eventos" },
-            { value: "quejas o sugerencias", text: "Quejas o Sugerencias" },
-            { value: "otro", text: "Otro" }
-          ]
-        },
-        mensaje: { label: "Mensaje *", placeholder: "Escribe tu mensaje aquí...", required: true },
-        btnSubmit: "Enviar Mensaje"
-      }
+      
     },
 
     footer: {
