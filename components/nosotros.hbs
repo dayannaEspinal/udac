@@ -1,15 +1,19 @@
 <section class="nosotros">
 
-  
-  <div class="intro">
+  <!-- FRANJA UNIDAD -->
+  <section class="unidad-franja">
 
-    <h2>{{nosotros.intro.title}}</h2>
-    <p>{{nosotros.intro.text}}</p>
-    <p>{{nosotros.intro.text2}}</p>
+    <div class="unidad-content">
 
-  </div>
+      <h2>{{nosotros.intro.title}}</h2>
+      <p class="main-text">{{nosotros.intro.text}}</p>
+      <p class="secondary-text">{{nosotros.intro.text2}}</p>
 
+    </div>
 
+  </section>
+
+  <!-- MISIÓN / VISIÓN -->
   <div class="mision-vision">
 
     <div class="box">
@@ -24,22 +28,34 @@
 
   </div>
 
+  
   <h2 class="title">Proyectos realizados</h2>
 
-  <div class="carousel">
+  <div class="carousel-wrapper">
 
-    {{#each nosotros.proyectos}}
-    <div class="card">
+    
+    <button class="carousel-btn left" onclick="moveCarousel(-1)">‹</button>
 
-      <img src="{{this.image}}" alt="proyecto">
+    
+    <div class="carousel" id="carousel">
 
-      <div class="info">
-        <h3>{{this.title}}</h3>
-        <p>{{this.desc}}</p>
+      {{#each nosotros.proyectos}}
+      <div class="card">
+
+        <img src="{{this.image}}" alt="proyecto">
+
+        <div class="info">
+          <h3>{{this.title}}</h3>
+          <p>{{this.desc}}</p>
+        </div>
+
       </div>
+      {{/each}}
 
     </div>
-    {{/each}}
+
+    <!-- BOTÓN DERECHA -->
+    <button class="carousel-btn right" onclick="moveCarousel(1)">›</button>
 
   </div>
 
