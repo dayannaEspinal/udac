@@ -227,7 +227,7 @@ nosotros: {
   hero: {
     title: "¿Quiénes somos?",
     subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
-    image: "/videos/bosque.gif"
+    image: "/video/bosque.gif"
   },
 
   intro: {
