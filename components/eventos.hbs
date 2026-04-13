@@ -1,8 +1,18 @@
 <section class="eventos">
 
-  <h2>{{eventos.title}}</h2>
-  <p class="subtitle">{{eventos.subtitle}}</p>
+ <section class="eventos-intro">
 
+  <div class="intro-content">
+
+    <h2>{{eventos.intro.title}}</h2>
+    <p>{{eventos.intro.text}}</p>
+    <span>{{eventos.intro.highlight}}</span>
+
+  </div>
+
+</section>
+
+  <!-- GRID -->
   <div class="grid">
 
     {{#each eventos.items}}
@@ -27,54 +37,51 @@
 
   </div>
 
-  
+  <!-- LINKS -->
   <div class="links">
     <h3>Explora más</h3>
 
     <div class="link-box">
 
       {{#each eventos.links}}
+      <a href="{{this.url}}" class="btn" target="_blank">
 
-        {{#if this.external}}
-          <a href="{{this.url}}" class="btn" target="_blank">
-            {{this.text}}
-          </a>
-        {{else}}
-          <a href="{{this.url}}" class="btn">
-            {{this.text}}
-          </a>
-        {{/if}}
+        <div class="link-title">{{this.text}}</div>
+        <div class="link-desc">{{this.desc}}</div>
 
+      </a>
       {{/each}}
 
     </div>
   </div>
 
- 
+  <!-- VIDEO -->
   <div class="video-section">
     <h3>Conoce nuestras actividades</h3>
     <iframe src="{{eventos.video}}" frameborder="0" allowfullscreen></iframe>
   </div>
 
- <section class="highlight">
+  <!-- HIGHLIGHT -->
+  <section class="highlight">
 
-  <img class="highlight-bg" src="{{eventos.extra.highlight.bg}}" alt="fondo">
+    <img class="highlight-bg" src="{{eventos.extra.highlight.bg}}" alt="fondo">
 
-  <div class="highlight-overlay"></div>
+    <div class="highlight-overlay"></div>
 
-  <div class="highlight-content">
+    <div class="highlight-content">
 
-    <h2>{{eventos.extra.highlight.title}}</h2>
-    <p>{{eventos.extra.highlight.text}}</p>
+      <h2>{{eventos.extra.highlight.title}}</h2>
+      <p>{{eventos.extra.highlight.text}}</p>
 
-    <a href="{{eventos.extra.highlight.link}}" class="btn-highlight">
-      {{eventos.extra.highlight.button}}
-    </a>
+      <a href="{{eventos.extra.highlight.link}}" class="btn-highlight">
+        {{eventos.extra.highlight.button}}
+      </a>
 
-  </div>
+    </div>
 
-</section>
-  
+  </section>
+
+  <!-- TESTIMONIOS -->
   <section class="testimonials">
 
     {{#each eventos.extra.testimonials}}
@@ -86,4 +93,4 @@
 
   </section>
 
-</section>
+</section> 

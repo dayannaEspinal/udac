@@ -203,19 +203,28 @@ eventos: {
 
   links: [
     {
-      text: "Sobre Nosotros",
-      url: "/nosotros.html"
+      text: "ICF - Conservación Forestal",
+      url: "https://icf.gob.hn/",
+      desc: "Protección y manejo sostenible de los bosques, áreas protegidas y vida silvestre en Honduras."
     },
-   {
-  text: "Áreas de acción",
-  url: "/areasdeaccion.html"
-},
     {
-      text: "Facebook UDAC",
-      url: "https://facebook.com",
-      external: true
+      text: "SERNA - Recursos Naturales",
+      url: "https://serna.gob.hn/",
+      desc: "Institución encargada de la gestión ambiental, recursos naturales y políticas de sostenibilidad del país."
+    },
+    {
+      text: "FAO Medio Ambiente",
+      url: "https://www.fao.org/americas/priorities/better-environment/es",
+      desc: "Organización internacional que promueve la seguridad alimentaria y la sostenibilidad ambiental global."
     }
   ],
+
+
+  intro: {
+    title: "Acciones que transforman el entorno",
+    text: "Nuestros eventos están diseñados para generar impacto real en el medio ambiente y fortalecer la participación comunitaria en Honduras.",
+    highlight: "Reforestación, educación ambiental y limpieza ecológica son parte de nuestro compromiso."
+  },
 
   items: [
     {
