@@ -1,26 +1,46 @@
 <section class="nosotros">
-  <div class="container">
-    <h2>Sobre Nosotros</h2>
-    <p>
-      Somos una organización comprometida con el desarrollo ambiental y comunitario,
-      promoviendo acciones sostenibles que mejoran la calidad de vida.
-    </p>
 
-    <div class="nosotros-grid">
-      <div class="card">
-        <h3>Misión</h3>
-        <p>Impulsar iniciativas que protejan el medio ambiente y fortalezcan las comunidades.</p>
-      </div>
+  
+  <div class="intro">
 
-      <div class="card">
-        <h3>Visión</h3>
-        <p>Ser líderes en proyectos sostenibles con impacto positivo a nivel nacional.</p>
-      </div>
+    <h2>{{nosotros.intro.title}}</h2>
+    <p>{{nosotros.intro.text}}</p>
+    <p>{{nosotros.intro.text2}}</p>
 
-      <div class="card">
-        <h3>Valores</h3>
-        <p>Responsabilidad, compromiso social, sostenibilidad e innovación.</p>
-      </div>
-    </div>
   </div>
+
+
+  <div class="mision-vision">
+
+    <div class="box">
+      <h3>Misión</h3>
+      <p>{{nosotros.misionVision.mision}}</p>
+    </div>
+
+    <div class="box">
+      <h3>Visión</h3>
+      <p>{{nosotros.misionVision.vision}}</p>
+    </div>
+
+  </div>
+
+  <h2 class="title">Proyectos realizados</h2>
+
+  <div class="carousel">
+
+    {{#each nosotros.proyectos}}
+    <div class="card">
+
+      <img src="{{this.image}}" alt="proyecto">
+
+      <div class="info">
+        <h3>{{this.title}}</h3>
+        <p>{{this.desc}}</p>
+      </div>
+
+    </div>
+    {{/each}}
+
+  </div>
+
 </section>

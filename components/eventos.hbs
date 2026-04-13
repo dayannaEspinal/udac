@@ -1,25 +1,54 @@
 <section class="eventos">
-  <div class="container">
-    <h2>Eventos</h2>
 
-    <div class="eventos-grid">
-      <div class="evento-card">
-        <h3>Reforestación Comunitaria</h3>
-        <p>Participa en nuestras jornadas de siembra de árboles.</p>
-        <span>Fecha: 15 de Junio</span>
+  <h2>{{eventos.title}}</h2>
+  <p class="subtitle">{{eventos.subtitle}}</p>
+
+  <div class="grid">
+
+    {{#each eventos.items}}
+    <div class="card">
+
+      <div class="img-box">
+        <img src="{{this.image}}" alt="evento">
       </div>
 
-      <div class="evento-card">
-        <h3>Limpieza de Ríos</h3>
-        <p>Actividad para preservar nuestras fuentes de agua.</p>
-        <span>Fecha: 10 de Julio</span>
+      <div class="info">
+        <h3>{{this.title}}</h3>
+        <p>{{this.desc}}</p>
+
+        <div class="meta">
+          <span>📅 {{this.date}}</span>
+          <span>📍 {{this.location}}</span>
+        </div>
       </div>
 
-      <div class="evento-card">
-        <h3>Taller Ambiental</h3>
-        <p>Capacitación sobre prácticas sostenibles.</p>
-        <span>Fecha: 5 de Agosto</span>
-      </div>
     </div>
+    {{/each}}
+
   </div>
+
+  <div class="info-extra">
+
+    {{#each eventos.extra}}
+    <div class="box">
+      <h3>{{this.title}}</h3>
+      <p>{{this.text}}</p>
+    </div>
+    {{/each}}
+
+  </div>
+
+  <!-- VIDEO -->
+  <div class="video-section">
+
+    <h3>Conoce nuestras actividades</h3>
+
+    <iframe 
+      src="{{eventos.video}}" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+
+  </div>
+
 </section>

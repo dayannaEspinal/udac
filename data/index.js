@@ -193,7 +193,77 @@ function getAllPageContext(page) {
         { src: "/img/limpiezarios2.jpg", alt: "Limpieza rios" },
         { src: "/img/cultivocafe.jpg", alt: "Cultivo cafe sostenible" },
 ],
+eventos: {
+  title: "Agenda de eventos UDAC",
+  subtitle: "Participa en actividades de impacto ambiental y social",
 
+  video: "https://www.youtube.com/embed/1w9pC8x5w3Q",
+
+  items: [
+    {
+      title: "Reforestación Masiva",
+      desc: "Jornada comunitaria de siembra de árboles para restaurar áreas degradadas y fortalecer ecosistemas locales.",
+      date: "Abril 2026",
+      location: "Zona rural de Danlí",
+      image: "/img/reforestacion.jpg"
+    },
+    {
+      title: "Educación Ambiental",
+      desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad dirigidos a jóvenes y adultos.",
+      date: "Mayo 2026",
+      location: "Centro comunitario UDAC",
+      image: "/img/charla.jpg"
+    },
+    {
+      title: "Limpieza Ecológica",
+      desc: "Campaña de limpieza de ríos y espacios públicos para reducir contaminación y proteger fuentes de agua.",
+      date: "Junio 2026",
+      location: "Río Choluteca, Danlí",
+      image: "/img/limpiezarios.jpg"
+    }
+  ]
+},
+nosotros: {
+  hero: {
+    title: "¿Quiénes somos?",
+    subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
+    image: "/videos/bosque.gif"
+  },
+
+  intro: {
+    title: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
+    text: "Somos una organización enfocada en la protección del medio ambiente y el desarrollo sostenible en comunidades de Honduras.",
+    text2: "Realizamos proyectos de reforestación, educación ambiental, limpieza comunitaria y conservación de recursos naturales."
+  },
+
+  misionVision: {
+    mision: "Promover la conciencia ambiental mediante acciones comunitarias y educación sostenible.",
+    vision: "Ser una organización líder en la transformación ambiental de Honduras."
+  },
+
+  proyectos: [
+    {
+      title: "Reforestación",
+      desc: "Plantación de árboles en zonas afectadas por la deforestación.",
+      image: "/img/reforestacion.jpg"
+    },
+    {
+      title: "Educación Ambiental",
+      desc: "Charlas y talleres sobre cuidado del medio ambiente.",
+      image: "/img/charla.jpg"
+    },
+    {
+      title: "Limpieza Comunitaria",
+      desc: "Campañas de limpieza en ríos y zonas urbanas.",
+      image: "/img/limpiezarios.jpg"
+    },
+    {
+      title: "Conservación",
+      desc: "Protección de flora y fauna en áreas naturales.",
+      image: "/img/conservacion.jpg"
+    }
+  ]
+},
   
     contact: {
       sectionTitle: "Contáctanos",
