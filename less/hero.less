@@ -1,6 +1,7 @@
+@import "variables.less";
 .hero {
   width: 100%;
-  height: 80vh; // 👈 IMPORTANTE (usa height, no solo min-height)
+  height: 80vh; 
 
   background-image: url('img/bosquedanli1.jpg');
   background-size: cover;
@@ -22,14 +23,14 @@
   align-items: center;
 }
 
-/* overlay oscuro suave */
+
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.2);
 }
 
-/* contenido */
+
 .hero-content {
   position: relative;
   z-index: 2;
@@ -39,7 +40,7 @@
   padding: 0 20px;
 }
 
-/* 🔥 CAJA CON BLUR (igual al auto) */
+
 .hero-box {
   max-width: 750px;
   text-align: center;
