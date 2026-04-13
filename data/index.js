@@ -275,10 +275,20 @@ eventos: {
       location: "Río local y zonas urbanas",
       image: "/img/limpiezacomunitaria.jpg"
     }
-  ]
-  
-},
+  ],
 
+  
+  extra: [
+    {
+      title: "Impacto Social",
+      text: "Nuestros eventos buscan generar conciencia ambiental y participación comunitaria activa."
+    },
+    {
+      title: "Objetivo",
+      text: "Promover la sostenibilidad, educación ambiental y protección de recursos naturales."
+    }
+  ]
+},
 nosotros: {
   hero: {
     title: "¿Quiénes somos?",
