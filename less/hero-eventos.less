@@ -8,60 +8,53 @@
   overflow: hidden;
   margin: 0;
   padding: 0;
-
-  .hero-bg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,0.7);
-    z-index: 2;
-  }
-
-  .hero-content {
-    position: relative;
-    z-index: 3;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    width: 100%;
-
-    gap: 12px;
-
-    h1 {
-      display: block;
-      margin: 0;
-    }
-
-    p {
-      display: block;
-      margin: 0;
-    }
-  }
 }
 
-.hero-eventos {
-  margin: 0;
-  padding: 0;
+.hero-eventos .hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  display: block;
 }
 
-.hero-page {
-  margin: 0;
-  padding: 0;
+.hero-eventos .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
 }
 
-.hero-page .container {
+.hero-eventos .hero-content {
+  position: relative;
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  width: 100%;
+
+  gap: 12px;
+}
+
+.hero-eventos .hero-content h1 {
   margin: 0;
-  padding: 0;
+  display: block;
+  font-size: 70px;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.hero-eventos .hero-content p {
+  margin: 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1.4;
+  opacity: 0.95;
 }
