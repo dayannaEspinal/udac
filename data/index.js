@@ -183,14 +183,13 @@ function getAllPageContext(page) {
     ],
 
     heroEventos: {
-      title: "Participa en Nuestros Eventos",
-      subtitle: "La acción colectiva es el motor del cambio. En UDAC organizamos constantemente jornadas de reforestación, limpieza de ríos y talleres educativos para proteger los ecosistemas de Honduras. ¡Descubre nuestras actividades y únete para dejar una huella positiva!",
+      title: "Participa, actúa y deja una huella positiva en Honduras.",
+      subtitle: "Organizamos actividades que protegen nuestros recursos naturales y educan a la comunidad para construir un mejor futuro.",
       image: "/img/eventos.jpg"
     },
 
     heroProyectos: {
-      title: "Nuestros Proyectos",
-      subtitle: "Iniciativas reales que están transformando a Honduras paso a paso.",
+      title: "Unidad de Desarrollo Ambiental y Comunitario",
       image: "/img/bosque2.jpg",
       focusTitle: "Nuestros Enfoques Clave:",
       focusItems: [
@@ -207,12 +206,11 @@ function getAllPageContext(page) {
       subtitle: "Estamos aquí para escuchar tus ideas y resolver tus dudas sobre la protección del medio ambiente en Honduras.",
       image: "/img/educacionambiental.jpg",
       profile: {
-        name: "John Glitfeldt",
-        role: "Coordinador de campañas y recaudación de fondos",
-        description: "John es responsable de la recaudación de fondos y también coordinador de las campañas de Bosques y el Mundo.",
-        email: "jgl@verdensskove.org",
-        phone: "+45 21 60 72 68",
-        tag: "Comunicación",
+        name: "Carlos Zuniga",
+        role: "Director UDAC",
+        description: "Líder en iniciativas de gestión ambiental, participación comunitaria y desarrollo de proyectos enfocados en la conservación de los recursos naturales y la educación ambiental.",
+        email: "czuniga@udac.org",
+        phone: "+504 9840-7071",
         image: "/img/John.jpg" 
       }
     },
@@ -286,6 +284,8 @@ function getAllPageContext(page) {
         }
       ]
     },
+
+    
     nosotros: {
   hero: {
     title: "¿Quiénes somos?",
@@ -300,8 +300,8 @@ function getAllPageContext(page) {
   },
 
   misionVision: {
-    mision: "Promover acciones ambientales sostenibles mediante educación y participación comunitaria.",
-    vision: "Ser una organización líder en transformación ambiental y social en Honduras."
+    mision: "Tenemos como misión promover la protección, conservación y restauración del medio ambiente mediante la participación activa de la comunidad, el desarrollo de programas de educación ambiental y la ejecución de acciones sostenibles que contribuyan al bienestar ecológico y social del país. Busca generar conciencia, fortalecer valores ambientales y fomentar una cultura de responsabilidad colectiva orientada al uso adecuado de los recursos naturales.",
+    vision: "Ser una organización líder a nivel nacional en la gestión ambiental comunitaria, reconocida por su impacto positivo en la conservación de los recursos naturales, la formación de ciudadanos comprometidos y la implementación de iniciativas innovadoras que impulsen un desarrollo sostenible. Aspirando a construir un futuro donde la armonía entre el ser humano y la naturaleza sea una prioridad en cada acción."
   },
 
  proyectos: [
@@ -351,7 +351,7 @@ eventos: {
   },
 
   items: [
-    {
+      {
       title: "Reforestación Masiva",
       desc: "Jornada comunitaria de siembra de árboles para restaurar áreas degradadas y fortalecer ecosistemas locales.",
       date: "Abril 2026",

@@ -1,6 +1,8 @@
 import "../less/main.less";
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("page-loaded");
+
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", (e) => {
       const href = anchor.getAttribute("href");
@@ -18,6 +20,23 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  const boxes = document.querySelectorAll(".mision-vision .box");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+        }
+      });
+    },
+    {
+      threshold: 0.2
+    }
+  );
+
+  boxes.forEach((box) => observer.observe(box));
 });
 
 function moveCarousel(direction) {
@@ -34,19 +53,3 @@ function moveCarousel(direction) {
 }
 
 window.moveCarousel = moveCarousel;
-const boxes = document.querySelectorAll(".mision-vision .box");
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("show");
-      }
-    });
-  },
-  {
-    threshold: 0.2
-  }
-);
-
-boxes.forEach((box) => observer.observe(box));

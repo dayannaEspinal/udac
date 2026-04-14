@@ -7,15 +7,12 @@
       <span>{{eventos.intro.highlight}}</span>
     </div>
   </section>
-
   <div class="grid">
     {{#each eventos.items}}
     <div class="card">
-
       <div class="img-box">
         <img src="{{this.image}}" alt="{{this.title}}">
       </div>
-
       <div class="info">
         <h3>{{this.title}}</h3>
         <p>{{this.desc}}</p>
@@ -25,14 +22,11 @@
           <span>{{this.location}}</span>
         </div>
       </div>
-
     </div>
     {{/each}}
   </div>
-
   <div class="links">
     <h3>Explora más</h3>
-
     <div class="link-box">
       {{#each eventos.links}}
       <a href="{{this.url}}" class="btn" target="_blank">
@@ -42,26 +36,17 @@
       {{/each}}
     </div>
   </div>
-
-  <div class="video-section">
-    <h3>Conoce nuestras actividades</h3>
-    <iframe src="{{eventos.video}}" frameborder="0" allowfullscreen></iframe>
-  </div>
-
   <section class="highlight">
     <img class="highlight-bg" src="{{eventos.extra.highlight.bg}}" alt="fondo">
     <div class="highlight-overlay"></div>
-
     <div class="highlight-content">
       <h2>{{eventos.extra.highlight.title}}</h2>
       <p>{{eventos.extra.highlight.text}}</p>
-
       <a href="{{eventos.extra.highlight.link}}" class="btn-highlight">
         {{eventos.extra.highlight.button}}
       </a>
     </div>
   </section>
-
   <section class="testimonials">
     {{#each eventos.extra.testimonials}}
     <div class="testimonial">
@@ -70,5 +55,4 @@
     </div>
     {{/each}}
   </section>
-
 </section>
