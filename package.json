@@ -23,9 +23,11 @@
   "devDependencies": {
     "less": "^4.6.4",
     "vite": "^8.0.8",
-    "vite-plugin-handlebars": "^2.0.0"
+    "vite-plugin-handlebars": "^2.0.0",
+    "vite-plugin-purgecss": "^0.2.13"
   },
   "dependencies": {
-    "glob": "^13.0.6"
+    "glob": "^13.0.6",
+    "react-router": "^7.14.1"
   }
 }
