@@ -13,16 +13,13 @@
       </div>
 
       <div class="info">
-
         <h3>{{this.title}}</h3>
-
         <p>{{this.desc}}</p>
 
         <div class="meta">
           <span>📅 {{this.date}}</span>
           <span>📍 {{this.location}}</span>
         </div>
-
       </div>
 
     </div>
@@ -32,15 +29,12 @@
 
   <div class="info-extra">
 
+    {{#each eventos.extra}}
     <div class="box">
-      <h3>Impacto Social</h3>
-      <p>Nuestros eventos buscan generar conciencia ambiental y participación comunitaria activa.</p>
+      <h3>{{this.title}}</h3>
+      <p>{{this.text}}</p>
     </div>
-
-    <div class="box">
-      <h3>Objetivo</h3>
-      <p>Promover la sostenibilidad, educación ambiental y protección de recursos naturales.</p>
-    </div>
+    {{/each}}
 
   </div>
 
@@ -48,7 +42,11 @@
 
     <h3>Conoce nuestras actividades</h3>
 
-    <iframe src="{{eventos.video}}" allowfullscreen></iframe>
+    <iframe 
+      src="{{eventos.video}}" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
 
   </div>
 

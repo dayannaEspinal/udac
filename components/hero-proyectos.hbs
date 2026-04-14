@@ -1,0 +1,31 @@
+<section class="hero-page-detailed" style="background-image: linear-gradient(rgba(13, 74, 43, 0.8), rgba(13, 74, 43, 0.8)), url('{{heroProyectos.image}}');">
+  <div class="container hero-detailed-grid">
+    
+    <div class="hero-main-info">
+      <h1>{{heroProyectos.title}}</h1>
+      <p class="main-subtitle">{{heroProyectos.subtitle}}</p>
+    </div>
+
+    <div class="hero-focus-info">
+      <h3>{{heroProyectos.focusTitle}}</h3>
+      <div class="focus-grid">
+        {{#each heroProyectos.focusItems}}
+        <div class="focus-item">
+          <div class="focus-icon">{{this.icon}}</div>
+          <div class="focus-text">
+            <h4>{{this.label}}</h4>
+            <strong>{{this.value}}</strong>
+            <p>{{this.desc}}</p>
+          </div>
+        </div>
+        {{/each}}
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="container">
+    <div class="hero-divider"></div>
+    <p class="hero-footer-text">{{heroProyectos.footerText}}</p>
+  </div>
+</section>

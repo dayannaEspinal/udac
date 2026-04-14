@@ -1,0 +1,33 @@
+<section class="voluntariado-section">
+  <div class="container">
+
+    <div class="voluntariado-row">
+      <div class="voluntariado-text">
+        <h2><span>Beneficios</span> de ser voluntario</h2>
+        <ul>
+          {{#each voluntariado.beneficios}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="voluntariado-image">
+        <img src="{{voluntariado.imgBeneficios}}" alt="Beneficios">
+      </div>
+    </div>
+
+    <div class="voluntariado-row reverse">
+      <div class="voluntariado-text">
+        <h2><span>Requisitos</span> para el voluntariado</h2>
+        <ul>
+          {{#each voluntariado.requisitos}}
+            <li>{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="voluntariado-image">
+        <img src="{{voluntariado.imgRequisitos}}" alt="Requisitos">
+      </div>
+    </div>
+
+  </div>
+</section>

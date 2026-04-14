@@ -183,9 +183,59 @@ function getAllPageContext(page) {
     ],
 
     heroEventos: {
-      title: "Eventos ambientales y comunitarios",
-      text: "Acciones reales que transforman el entorno y fortalecen la conciencia ambiental.",
+      title: "Participa en Nuestros Eventos",
+      subtitle: "La acción colectiva es el motor del cambio. En UDAC organizamos constantemente jornadas de reforestación, limpieza de ríos y talleres educativos para proteger los ecosistemas de Honduras. ¡Descubre nuestras actividades y únete para dejar una huella positiva!",
       image: "/img/eventos.jpg"
+    },
+
+    heroProyectos: {
+      title: "Nuestros Proyectos",
+      subtitle: "Iniciativas reales que están transformando a Honduras paso a paso.",
+      image: "/img/bosque2.jpg",
+      focusTitle: "Nuestros Enfoques Clave:",
+      focusItems: [
+        { icon: "🌱", label: "Reforestación", value: "+15,000 Árboles Plantados", desc: "En microcuencas críticas de Danlí, restaurando ecosistemas vitales." },
+        { icon: "🤝", label: "Desarrollo Comunitario", value: "12 Comunidades Empoderadas", desc: "Capacitaciones en agricultura sostenible y soberanía alimentaria." },
+        { icon: "📚", label: "Educación Ambiental", value: "5 Escuelas Equipadas", desc: "Programas interactivos para más de 300 estudiantes locales." },
+        { icon: "💧", label: "Conservación de Agua", value: "Protección de 4 Fuentes", desc: "Monitoreo y conservación de microcuencas de agua vitales." }
+      ],
+      footerText: "Acompáñanos a descubrir las historias detrás de cada hectárea recuperada, cada comunidad fortalecida y cada niño educado para un futuro sostenible."
+    },
+
+    heroContactanos: {
+      title: "Póngase en contacto con nosotros",
+      subtitle: "Estamos aquí para escuchar tus ideas y resolver tus dudas sobre la protección del medio ambiente en Honduras.",
+      image: "/img/educacionambiental.jpg",
+      profile: {
+        name: "John Glitfeldt",
+        role: "Coordinador de campañas y recaudación de fondos",
+        description: "John es responsable de la recaudación de fondos y también coordinador de las campañas de Bosques y el Mundo.",
+        email: "jgl@verdensskove.org",
+        phone: "+45 21 60 72 68",
+        tag: "Comunicación",
+        image: "/img/John.jpg" 
+      }
+    },
+
+    voluntariado: {
+      imgBeneficios: "/img/voluntariado_beneficios.jpg", 
+      imgRequisitos: "/img/voluntariado_requisitos.jpg",
+      beneficios: [
+        "Desarrollo de competencias y habilidades",
+        "Reconocimiento de comunidad como una persona que promueve el apropiamiento y sostenibilidad de los procesos de desarrollo en su comunidad.",
+        "Contribución al fortalecimiento del bienestar de niños, niñas, familias y comunidades.",
+        "Reconocimiento por la labor voluntaria",
+        "Oportunidad de servir a las personas vulnerables",
+        "Gratificación del personal por servir a otros y formar parte de nuestro programa de voluntariado.",
+        "Sin esperar nada a cambio recibe mucho"
+      ],
+      requisitos: [
+        "Ser mayor de 18 años (o contar con permiso de un tutor legal).",
+        "Alto compromiso y responsabilidad con las actividades asignadas.",
+        "Vocación de servicio, empatía y amor por la naturaleza.",
+        "Disponibilidad de tiempo para asistir a las jornadas de campo.",
+        "Llenar el formulario oficial de inscripción de UDAC."
+      ]
     },
 
     proyectosData: {
@@ -281,6 +331,19 @@ function getAllPageContext(page) {
         mision: "Promover acciones ambientales sostenibles mediante educación y participación comunitaria.",
         vision: "Ser una organización líder en transformación ambiental y social en Honduras."
       },
+
+      heroProyectos: {
+      title: "Nuestros Proyectos",
+      subtitle: "Iniciativas reales que están transformando a Honduras paso a paso.",
+      image: "/img/bosque2.jpg"
+    },
+
+    heroContactanos: {
+      title: "Estamos para escucharte",
+      subtitle: "Ponte en contacto con nosotros para sumar esfuerzos por el medio ambiente.",
+      image: "/img/educacionambiental.jpg"
+    },
+
       proyectos: [
         {
           title: "Reforestación",
