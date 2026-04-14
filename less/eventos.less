@@ -1,7 +1,8 @@
 .eventos {
-  padding: 90px;
+  padding: 90px 0 0 0;
   background: #f5f5f5;
   text-align: center;
+  margin: 0;
 
   h2 {
     font-size: 45px;
@@ -11,61 +12,53 @@
     margin-bottom: 50px;
     color: #666;
   }
-
-  .grid {
-    padding: 0; 
-    background: #f5f5f5;
-    text-align: center;
-  }
-} /* <-- ESTA LLAVE FALTABA */
-
-.eventos > h2 {
-  font-size: 42px;
-  margin: 40px 0 10px;
 }
 
-.eventos > .subtitle {
-  margin-bottom: 50px;
-  color: #666;
-}
-
+/* FRANJA INTRO (QUITAMOS ESPACIOS ENTRE HERO Y ESTA SECCIÓN) */
 .eventos-intro {
   width: 100%;
   margin: 0;
-  padding: 90px 20px;
+  padding: 80px 20px;
   background: linear-gradient(90deg, #ff9800, #ffeb3b);
+
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+
   position: relative;
+}
 
-  .intro-content {
-    max-width: 900px;
-    color: #fff;
+.eventos-intro .intro-content {
+  max-width: 900px;
+  color: #fff;
 
-    h2 {
-      font-size: 36px;
-      margin-bottom: 15px;
-      font-weight: bold;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 
-    p {
-      font-size: 18px;
-      margin-bottom: 15px;
-      opacity: 0.95;
-    }
+  h2 {
+    font-size: 36px;
+    margin: 0;
+  }
 
-    span {
-      display: inline-block;
-      padding: 10px 15px;
-      background: rgba(0,0,0,0.15);
-      border-radius: 10px;
-      font-size: 14px;
-    }
+  p {
+    font-size: 18px;
+    margin: 0;
+    opacity: 0.95;
+  }
+
+  span {
+    display: inline-block;
+    padding: 10px 15px;
+    background: rgba(0,0,0,0.15);
+    border-radius: 10px;
+    font-size: 14px;
   }
 }
 
+/* GRID EVENTOS */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -73,6 +66,7 @@
   padding: 60px 40px 0;
 }
 
+/* CARD */
 .card {
   background: white;
   border-radius: 15px;
@@ -112,6 +106,7 @@
   }
 }
 
+/* LINKS */
 .links {
   margin-top: 80px;
   padding: 0 40px;
@@ -126,86 +121,6 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
   }
-
-  .card {
-    background: white;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    transition: 0.3s;
-
-    &:hover {
-      transform: translateY(-8px);
-    }
-
-    .img-box {
-      height: 200px;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    .info {
-      padding: 18px;
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-size: 14px;
-        color: #555;
-        margin-bottom: 12px;
-      }
-
-      .meta {
-        display: flex;
-        justify-content: space-between;
-        font-size: 12px;
-        color: gray;
-      }
-    }
-  }
-
-  .info-extra {
-    margin-top: 60px;
-    display: flex;
-    gap: 20px;
-
-    .box {
-      flex: 1;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-
-      h3 {
-        margin-bottom: 10px;
-      }
-
-      p {
-        font-size: 14px;
-        color: #555;
-      }
-    }
-  }
-
-  .video-section {
-    margin-top: 70px;
-
-    h3 {
-      margin-bottom: 20px;
-    }
-
-    iframe {
-      width: 80%;
-      height: 450px;
-      border-radius: 12px;
-    }
-  } /* <-- ESTA LLAVE FALTABA */
 
   .btn {
     background: white;
@@ -237,9 +152,15 @@
   }
 }
 
+/* VIDEO */
 .video-section {
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 0 40px;
+  text-align: center;
+
+  h3 {
+    margin-bottom: 20px;
+  }
 
   iframe {
     width: 100%;
@@ -249,6 +170,7 @@
   }
 }
 
+/* HIGHLIGHT */
 .highlight {
   margin-top: 80px;
   position: relative;
@@ -303,6 +225,7 @@
   }
 }
 
+/* TESTIMONIALS */
 .testimonials {
   margin-top: 80px;
   padding: 60px 20px;
@@ -339,10 +262,8 @@
   }
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
-  .eventos {
-    padding: 0;
-  }
 
   .hero-eventos .hero-content h1 {
     font-size: 40px;
@@ -357,7 +278,13 @@
   }
 
   .links .link-box {
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
   }
 }
+.hero-eventos {
+  margin-bottom: 0;
+}
+
+.eventos-intro {
+  margin-top: 0;
+} 

@@ -1,35 +1,19 @@
 <section class="eventos">
 
-<<<<<<< HEAD
-  <h2>{{eventos.title}}</h2>
-  <p class="subtitle">{{eventos.subtitle}}</p>
+  <section class="eventos-intro">
+    <div class="intro-content">
+      <h2>{{eventos.intro.title}}</h2>
+      <p>{{eventos.intro.text}}</p>
+      <span>{{eventos.intro.highlight}}</span>
+    </div>
+  </section>
 
-=======
- <section class="eventos-intro">
-
-  <div class="intro-content">
-
-    <h2>{{eventos.intro.title}}</h2>
-    <p>{{eventos.intro.text}}</p>
-    <span>{{eventos.intro.highlight}}</span>
-
-  </div>
-
-</section>
-
-  <!-- GRID -->
->>>>>>> 03c1403cc22524c8f40e84e5b7890329ff725c8c
   <div class="grid">
-
     {{#each eventos.items}}
     <div class="card">
 
       <div class="img-box">
-<<<<<<< HEAD
-        <img src="{{this.image}}" alt="evento">
-=======
         <img src="{{this.image}}" alt="{{this.title}}">
->>>>>>> 03c1403cc22524c8f40e84e5b7890329ff725c8c
       </div>
 
       <div class="info">
@@ -37,13 +21,6 @@
         <p>{{this.desc}}</p>
 
         <div class="meta">
-<<<<<<< HEAD
-          <span>📅 {{this.date}}</span>
-          <span>📍 {{this.location}}</span>
-        </div>
-      </div>
-
-=======
           <span>{{this.date}}</span>
           <span>{{this.location}}</span>
         </div>
@@ -51,93 +28,47 @@
 
     </div>
     {{/each}}
-
   </div>
 
-  <!-- LINKS -->
   <div class="links">
     <h3>Explora más</h3>
 
     <div class="link-box">
-
       {{#each eventos.links}}
       <a href="{{this.url}}" class="btn" target="_blank">
-
         <div class="link-title">{{this.text}}</div>
         <div class="link-desc">{{this.desc}}</div>
-
       </a>
       {{/each}}
-
->>>>>>> 03c1403cc22524c8f40e84e5b7890329ff725c8c
     </div>
-    {{/each}}
-
   </div>
 
-<<<<<<< HEAD
-  <div class="info-extra">
-
-    {{#each eventos.extra}}
-    <div class="box">
-      <h3>{{this.title}}</h3>
-      <p>{{this.text}}</p>
-    </div>
-    {{/each}}
-
-  </div>
-
-  <div class="video-section">
-
-    <h3>Conoce nuestras actividades</h3>
-
-    <iframe 
-      src="{{eventos.video}}" 
-      frameborder="0" 
-      allowfullscreen>
-    </iframe>
-
-  </div>
-
-</section>
-=======
-  <!-- VIDEO -->
   <div class="video-section">
     <h3>Conoce nuestras actividades</h3>
     <iframe src="{{eventos.video}}" frameborder="0" allowfullscreen></iframe>
   </div>
 
-  <!-- HIGHLIGHT -->
   <section class="highlight">
-
     <img class="highlight-bg" src="{{eventos.extra.highlight.bg}}" alt="fondo">
-
     <div class="highlight-overlay"></div>
 
     <div class="highlight-content">
-
       <h2>{{eventos.extra.highlight.title}}</h2>
       <p>{{eventos.extra.highlight.text}}</p>
 
       <a href="{{eventos.extra.highlight.link}}" class="btn-highlight">
         {{eventos.extra.highlight.button}}
       </a>
-
     </div>
-
   </section>
 
-  <!-- TESTIMONIOS -->
   <section class="testimonials">
-
     {{#each eventos.extra.testimonials}}
     <div class="testimonial">
       <p>{{this.text}}</p>
       <span>{{this.name}}</span>
     </div>
     {{/each}}
-
   </section>
 
-</section> 
->>>>>>> 03c1403cc22524c8f40e84e5b7890329ff725c8c
+</section>

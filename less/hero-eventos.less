@@ -27,30 +27,41 @@
   .hero-content {
     position: relative;
     z-index: 3;
-    text-align: center;
-    max-width: 900px;
-    
-    /* Agrupamos aquí el flexbox que tenías suelto */
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 100%;
+
+    gap: 12px;
 
     h1 {
-      font-size: 70px;
-      font-weight: bold;
+      display: block;
       margin: 0;
     }
 
     p {
-      font-size: 22px;
+      display: block;
       margin: 0;
-      opacity: 0.9;
     }
   }
 }
 
-body {
+.hero-eventos {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-page {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-page .container {
   margin: 0;
   padding: 0;
 }

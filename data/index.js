@@ -286,126 +286,53 @@ function getAllPageContext(page) {
         }
       ]
     },
-
-    eventos: {
-      title: "Agenda de eventos UDAC",
-      subtitle: "Participa en actividades de impacto ambiental y social",
-      video: "https://www.youtube.com/embed/1w9pC8x5w3Q",
-      items: [
-        {
-          title: "Reforestación Masiva",
-          desc: "Jornada comunitaria de siembra de árboles para restaurar áreas degradadas y fortalecer ecosistemas locales.",
-          date: "Abril 2026",
-          location: "Zona rural de Danlí",
-          image: "/img/reforestacion.jpg"
-        },
-        {
-          title: "Educación Ambiental",
-          desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad dirigidos a jóvenes y adultos.",
-          date: "Mayo 2026",
-          location: "Centro comunitario UDAC",
-          image: "/img/charla.jpg"
-        },
-        {
-          title: "Limpieza Ecológica",
-          desc: "Campaña de limpieza de ríos y espacios públicos para reducir contaminación y proteger fuentes de agua.",
-          date: "Junio 2026",
-          location: "Río local y zonas urbanas",
-          image: "/img/limpiezacomunitaria.jpg"
-        }
-      ]
-    },
-
     nosotros: {
-      hero: {
-        title: "¿Quiénes somos?",
-        subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
-        image: "/video/montaña.gif"
-      },
-      intro: {
-        title: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
-        text: "Somos una organización dedicada a la protección del medio ambiente y el desarrollo sostenible de comunidades en Honduras.",
-        text2: "Impulsamos proyectos de reforestación, educación ambiental, limpieza comunitaria y conservación de recursos naturales."
-      },
-      misionVision: {
-        mision: "Promover acciones ambientales sostenibles mediante educación y participación comunitaria.",
-        vision: "Ser una organización líder en transformación ambiental y social en Honduras."
-      },
+  hero: {
+    title: "¿Quiénes somos?",
+    subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
+    image: "/video/montaña.gif"
+  },
 
-      heroProyectos: {
-      title: "Nuestros Proyectos",
-      subtitle: "Iniciativas reales que están transformando a Honduras paso a paso.",
-      image: "/img/bosque2.jpg"
+  intro: {
+    title: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
+    text: "Somos una organización dedicada a la protección del medio ambiente y el desarrollo sostenible en comunidades de Honduras.",
+    text2: "Impulsamos proyectos de reforestación, educación ambiental, limpieza comunitaria y conservación de recursos naturales."
+  },
+
+  misionVision: {
+    mision: "Promover acciones ambientales sostenibles mediante educación y participación comunitaria.",
+    vision: "Ser una organización líder en transformación ambiental y social en Honduras."
+  },
+
+  proyectos: [
+    {
+      title: "Reforestación",
+      desc: "Restauración de áreas verdes mediante la siembra de árboles nativos.",
+      image: "/img/reforestacion.jpg"
     },
-
-    heroContactanos: {
-      title: "Estamos para escucharte",
-      subtitle: "Ponte en contacto con nosotros para sumar esfuerzos por el medio ambiente.",
-      image: "/img/educacionambiental.jpg"
+    {
+      title: "Educación Ambiental",
+      desc: "Formación en temas ecológicos para niños, jóvenes y comunidades.",
+      image: "/img/charla.jpg"
     },
-
-      proyectos: [
-        {
-          title: "Reforestación",
-          desc: "Restauración de áreas verdes mediante la siembra de árboles.",
-          image: "/img/proyecto1.jpg"
-        },
-        {
-          title: "Educación Ambiental",
-          desc: "Formación en temas ecológicos para jóvenes y comunidades.",
-          image: "/img/charlascolegios.jpg"
-        },
-        {
-          title: "Limpieza Comunitaria",
-          desc: "Campañas de limpieza en ríos, calles y espacios públicos.",
-          image: "/img/limpiezarios.jpg"
-        },
-        {
-          title: "Conservación",
-          desc: "Protección de flora y fauna en zonas vulnerables.",
-          image: "/img/conservacion.jpg"
-        }
-      ]
+    {
+      title: "Limpieza Comunitaria",
+      desc: "Campañas de limpieza en ríos, calles y espacios públicos.",
+      image: "/img/limpiezarios.jpg"
     },
-
-      galleryTitle: "Acciones que transforman",
-      galleryImages: [
-        { src: "/img/reforestacion3.jpg", alt: "Reforestacion" },
-        { src: "/img/limpiezarios.jpg", alt: "Limpieza de rios" },
-        { src: "/img/recoleccionbasura.jpg", alt: "Recoleccion de basura" },
-        { src: "/img/ganaderiasostenible.jpg", alt: "Ganderia sostenible" },
-        { src: "/img/composta.jpg", alt: "Composta" },
-        { src: "/img/reforestacion4.jpg", alt: "Reforestacion4" },
-        { src: "/img/niña.jpg", alt: "niña comunidad" },
-        { src: "/img/limpiezarios2.jpg", alt: "Limpieza rios" },
-        { src: "/img/cultivocafe.jpg", alt: "Cultivo cafe sostenible" },
-],
+    {
+      title: "Conservación de Ecosistemas",
+      desc: "Protección de flora y fauna en zonas vulnerables.",
+      image: "/img/conservacion.jpg"
+    }
+  ]
+},
 eventos: {
   title: "Agenda de eventos UDAC",
   subtitle: "Participa en actividades de impacto ambiental y social",
 
   image: "/img/eventos.jpg",
-
   video: "https://www.youtube.com/embed/1w9pC8x5w3Q",
-
-  links: [
-    {
-      text: "ICF - Conservación Forestal",
-      url: "https://icf.gob.hn/",
-      desc: "Protección y manejo sostenible de los bosques, áreas protegidas y vida silvestre en Honduras."
-    },
-    {
-      text: "SERNA - Recursos Naturales",
-      url: "https://serna.gob.hn/",
-      desc: "Institución encargada de la gestión ambiental, recursos naturales y políticas de sostenibilidad del país."
-    },
-    {
-      text: "FAO Medio Ambiente",
-      url: "https://www.fao.org/americas/priorities/better-environment/es",
-      desc: "Organización internacional que promueve la seguridad alimentaria y la sostenibilidad ambiental global."
-    }
-  ],
-
 
   intro: {
     title: "Acciones que transforman el entorno",
@@ -423,7 +350,7 @@ eventos: {
     },
     {
       title: "Educación Ambiental",
-      desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad.",
+      desc: "Talleres educativos sobre reciclaje, cambio climático y sostenibilidad.",
       date: "Mayo 2026",
       location: "Centro comunitario UDAC",
       image: "/img/charla.jpg"
@@ -434,6 +361,24 @@ eventos: {
       date: "Junio 2026",
       location: "Río Choluteca, Danlí",
       image: "/img/limpiezarios.jpg"
+    }
+  ],
+
+  links: [
+    {
+      text: "ICF - Conservación Forestal",
+      url: "https://icf.gob.hn/",
+      desc: "Protección y manejo sostenible de los bosques, áreas protegidas y vida silvestre en Honduras."
+    },
+    {
+      text: "SERNA - Recursos Naturales",
+      url: "https://serna.gob.hn/",
+      desc: "Gestión ambiental y políticas de sostenibilidad en Honduras."
+    },
+    {
+      text: "FAO Medio Ambiente",
+      url: "https://www.fao.org/americas/priorities/better-environment/es",
+      desc: "Organización internacional enfocada en seguridad alimentaria y sostenibilidad ambiental."
     }
   ],
 
@@ -468,47 +413,6 @@ eventos: {
       }
     ]
   }
-},
-nosotros: {
-  hero: {
-    title: "¿Quiénes somos?",
-    subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
-    image: "/video/bosque.gif"
-  },
-
-  intro: {
-    title: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
-    text: "Somos una organización enfocada en la protección del medio ambiente y el desarrollo sostenible en comunidades de Honduras.",
-    text2: "Realizamos proyectos de reforestación, educación ambiental, limpieza comunitaria y conservación de recursos naturales."
-  },
-
-  misionVision: {
-    mision: "Promover la conciencia ambiental mediante acciones comunitarias y educación sostenible.",
-    vision: "Ser una organización líder en la transformación ambiental de Honduras."
-  },
-
-  proyectos: [
-    {
-      title: "Reforestación",
-      desc: "Plantación de árboles en zonas afectadas por la deforestación.",
-      image: "/img/reforestacion.jpg"
-    },
-    {
-      title: "Educación Ambiental",
-      desc: "Charlas y talleres sobre cuidado del medio ambiente.",
-      image: "/img/charla.jpg"
-    },
-    {
-      title: "Limpieza Comunitaria",
-      desc: "Campañas de limpieza en ríos y zonas urbanas.",
-      image: "/img/limpiezarios.jpg"
-    },
-    {
-      title: "Conservación",
-      desc: "Protección de flora y fauna en áreas naturales.",
-      image: "/img/conservacion.jpg"
-    }
-  ]
 },
   
     contact: {
