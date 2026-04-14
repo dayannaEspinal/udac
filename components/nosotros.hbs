@@ -1,5 +1,6 @@
 <section class="nosotros">
 
+<<<<<<< HEAD
   
   <div class="intro">
 
@@ -41,6 +42,64 @@
 
     </div>
     {{/each}}
+=======
+  <!-- FRANJA UNIDAD -->
+  <section class="unidad-franja">
+
+    <div class="unidad-content">
+
+      <h2>{{nosotros.intro.title}}</h2>
+      <p class="main-text">{{nosotros.intro.text}}</p>
+      <p class="secondary-text">{{nosotros.intro.text2}}</p>
+
+    </div>
+
+  </section>
+
+  <!-- MISIÓN / VISIÓN -->
+  <div class="mision-vision">
+
+    <div class="box">
+      <h3>Misión</h3>
+      <p>{{nosotros.misionVision.mision}}</p>
+    </div>
+
+    <div class="box">
+      <h3>Visión</h3>
+      <p>{{nosotros.misionVision.vision}}</p>
+    </div>
+
+  </div>
+
+  
+  <h2 class="title">Proyectos realizados</h2>
+
+  <div class="carousel-wrapper">
+
+    
+    <button class="carousel-btn left" onclick="moveCarousel(-1)">‹</button>
+
+    
+    <div class="carousel" id="carousel">
+
+      {{#each nosotros.proyectos}}
+      <div class="card">
+
+        <img src="{{this.image}}" alt="proyecto">
+
+        <div class="info">
+          <h3>{{this.title}}</h3>
+          <p>{{this.desc}}</p>
+        </div>
+
+      </div>
+      {{/each}}
+
+    </div>
+
+    <!-- BOTÓN DERECHA -->
+    <button class="carousel-btn right" onclick="moveCarousel(1)">›</button>
+>>>>>>> 03c1403cc22524c8f40e84e5b7890329ff725c8c
 
   </div>
 

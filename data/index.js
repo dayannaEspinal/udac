@@ -368,6 +368,149 @@ function getAllPageContext(page) {
       ]
     },
 
+      galleryTitle: "Acciones que transforman",
+      galleryImages: [
+        { src: "/img/reforestacion3.jpg", alt: "Reforestacion" },
+        { src: "/img/limpiezarios.jpg", alt: "Limpieza de rios" },
+        { src: "/img/recoleccionbasura.jpg", alt: "Recoleccion de basura" },
+        { src: "/img/ganaderiasostenible.jpg", alt: "Ganderia sostenible" },
+        { src: "/img/composta.jpg", alt: "Composta" },
+        { src: "/img/reforestacion4.jpg", alt: "Reforestacion4" },
+        { src: "/img/niña.jpg", alt: "niña comunidad" },
+        { src: "/img/limpiezarios2.jpg", alt: "Limpieza rios" },
+        { src: "/img/cultivocafe.jpg", alt: "Cultivo cafe sostenible" },
+],
+eventos: {
+  title: "Agenda de eventos UDAC",
+  subtitle: "Participa en actividades de impacto ambiental y social",
+
+  image: "/img/eventos.jpg",
+
+  video: "https://www.youtube.com/embed/1w9pC8x5w3Q",
+
+  links: [
+    {
+      text: "ICF - Conservación Forestal",
+      url: "https://icf.gob.hn/",
+      desc: "Protección y manejo sostenible de los bosques, áreas protegidas y vida silvestre en Honduras."
+    },
+    {
+      text: "SERNA - Recursos Naturales",
+      url: "https://serna.gob.hn/",
+      desc: "Institución encargada de la gestión ambiental, recursos naturales y políticas de sostenibilidad del país."
+    },
+    {
+      text: "FAO Medio Ambiente",
+      url: "https://www.fao.org/americas/priorities/better-environment/es",
+      desc: "Organización internacional que promueve la seguridad alimentaria y la sostenibilidad ambiental global."
+    }
+  ],
+
+
+  intro: {
+    title: "Acciones que transforman el entorno",
+    text: "Nuestros eventos están diseñados para generar impacto real en el medio ambiente y fortalecer la participación comunitaria en Honduras.",
+    highlight: "Reforestación, educación ambiental y limpieza ecológica son parte de nuestro compromiso."
+  },
+
+  items: [
+    {
+      title: "Reforestación Masiva",
+      desc: "Jornada comunitaria de siembra de árboles para restaurar áreas degradadas y fortalecer ecosistemas locales.",
+      date: "Abril 2026",
+      location: "Zona rural de Danlí",
+      image: "/img/reforestacion.jpg"
+    },
+    {
+      title: "Educación Ambiental",
+      desc: "Talleres educativos sobre reciclaje, cambio climático, agua y sostenibilidad.",
+      date: "Mayo 2026",
+      location: "Centro comunitario UDAC",
+      image: "/img/charla.jpg"
+    },
+    {
+      title: "Limpieza Ecológica",
+      desc: "Campaña de limpieza de ríos y espacios públicos para reducir contaminación.",
+      date: "Junio 2026",
+      location: "Río Choluteca, Danlí",
+      image: "/img/limpiezarios.jpg"
+    }
+  ],
+
+  extra: {
+    highlight: {
+      title: "Únete al cambio",
+      text: "Cada acción cuenta. Participa en nuestros eventos y ayuda a transformar el medio ambiente en Honduras.",
+      button: "Quiero participar",
+      link: "/contacto.html",
+      bg: "/video/naturaleza.gif"
+    },
+
+    gallery: [
+      "/img/proyectoecologico.jpg",
+      "/img/conservarflora.jpg",
+      "/img/conservarfauna.jpg",
+      "/img/reunionecologica.jpg"
+    ],
+
+    testimonials: [
+      {
+        text: "Una experiencia increíble, aprendí mucho sobre el medio ambiente.",
+        name: "María López"
+      },
+      {
+        text: "Me encantó participar en la reforestación.",
+        name: "Carlos Méndez"
+      },
+      {
+        text: "Excelente organización y muy buen ambiente.",
+        name: "Ana García"
+      }
+    ]
+  }
+},
+nosotros: {
+  hero: {
+    title: "¿Quiénes somos?",
+    subtitle: "Comprometidos con el desarrollo ambiental y comunitario en Honduras",
+    image: "/video/bosque.gif"
+  },
+
+  intro: {
+    title: "Unidad de Desarrollo Ambiental y Comunitario (UDAC)",
+    text: "Somos una organización enfocada en la protección del medio ambiente y el desarrollo sostenible en comunidades de Honduras.",
+    text2: "Realizamos proyectos de reforestación, educación ambiental, limpieza comunitaria y conservación de recursos naturales."
+  },
+
+  misionVision: {
+    mision: "Promover la conciencia ambiental mediante acciones comunitarias y educación sostenible.",
+    vision: "Ser una organización líder en la transformación ambiental de Honduras."
+  },
+
+  proyectos: [
+    {
+      title: "Reforestación",
+      desc: "Plantación de árboles en zonas afectadas por la deforestación.",
+      image: "/img/reforestacion.jpg"
+    },
+    {
+      title: "Educación Ambiental",
+      desc: "Charlas y talleres sobre cuidado del medio ambiente.",
+      image: "/img/charla.jpg"
+    },
+    {
+      title: "Limpieza Comunitaria",
+      desc: "Campañas de limpieza en ríos y zonas urbanas.",
+      image: "/img/limpiezarios.jpg"
+    },
+    {
+      title: "Conservación",
+      desc: "Protección de flora y fauna en áreas naturales.",
+      image: "/img/conservacion.jpg"
+    }
+  ]
+},
+  
     contact: {
       sectionTitle: "Contáctanos",
       sectionSubtitle: "¿Tienes alguna pregunta? Estamos aquí para ayudarte",
