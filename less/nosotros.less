@@ -121,12 +121,12 @@ body {
   line-height: 1.8;
   color: #555;
 }
+
 .title {
   text-align: center;
   margin: 70px 0 20px;
   font-size: 32px;
 }
-
 .carousel-wrapper {
   position: relative;
   display: flex;
@@ -137,26 +137,33 @@ body {
 
 .carousel {
   display: flex;
-  gap: 30px;
+  gap: 22px;
   overflow-x: auto;
   scroll-behavior: smooth;
   padding: 30px 40px;
   width: 100%;
   scrollbar-width: none;
+
+
+  scroll-snap-type: x mandatory;
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
 }
 
+
 .carousel .card {
-  min-width: 380px;
+  min-width: 340px;
+  max-width: 340px;
   flex: 0 0 auto;
   background: white;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0,0,0,0.12);
   transition: 0.3s;
+
+  scroll-snap-align: start;
 }
 
 .carousel .card:hover {
@@ -165,12 +172,34 @@ body {
 
 .carousel .card img {
   width: 100%;
-  height: 260px;
+  height: 200px;
   object-fit: cover;
+  display: block;
 }
 
+
 .carousel .card .info {
-  padding: 18px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.carousel .card .info h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+.carousel .card .info p {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .carousel-btn {

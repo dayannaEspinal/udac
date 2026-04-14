@@ -304,28 +304,38 @@ function getAllPageContext(page) {
     vision: "Ser una organización líder en transformación ambiental y social en Honduras."
   },
 
-  proyectos: [
-    {
-      title: "Reforestación",
-      desc: "Restauración de áreas verdes mediante la siembra de árboles nativos.",
-      image: "/img/reforestacion.jpg"
-    },
-    {
-      title: "Educación Ambiental",
-      desc: "Formación en temas ecológicos para niños, jóvenes y comunidades.",
-      image: "/img/charla.jpg"
-    },
-    {
-      title: "Limpieza Comunitaria",
-      desc: "Campañas de limpieza en ríos, calles y espacios públicos.",
-      image: "/img/limpiezarios.jpg"
-    },
-    {
-      title: "Conservación de Ecosistemas",
-      desc: "Protección de flora y fauna en zonas vulnerables.",
-      image: "/img/conservacion.jpg"
-    }
-  ]
+ proyectos: [
+  {
+    title: "Conferencia sobre Cambio Climático",
+    desc: "Espacio de aprendizaje donde expertos comparten información clave sobre el cambio climático, sus efectos en Honduras y las acciones que podemos tomar para proteger el medio ambiente y construir un futuro sostenible.",
+    image: "/img/conferencia.jpg"
+  },
+  {
+    title: "Taller de Reciclaje Creativo",
+    desc: "Actividad interactiva en la que los participantes aprenden a reutilizar materiales como plástico, cartón y vidrio, transformándolos en objetos útiles y promoviendo una cultura de reciclaje en la comunidad.",
+    image: "/img/taller.jpg"
+  },
+  {
+    title: "Día de Movilidad Sostenible",
+    desc: "Evento que promueve el uso de medios de transporte ecológicos como la bicicleta y la caminata, con el objetivo de reducir la contaminación y fomentar hábitos saludables en la población.",
+    image: "/img/movilidad.jpg"
+  },
+  {
+    title: "Charla Ambiental para Niños",
+    desc: "Actividad educativa dirigida a niños de escuelas primarias, donde se enseñan de forma dinámica y divertida temas como el reciclaje, el cuidado del agua y la protección de la naturaleza, fomentando desde temprana edad la conciencia ambiental.",
+    image: "/img/charla.jpg"
+  },
+  {
+  title: "Caminata Ecológica Guiada",
+  desc: "Actividad al aire libre que permite a los participantes conectar con la naturaleza, conocer la biodiversidad local y aprender sobre la importancia de conservar los ecosistemas.",
+  image: "/img/caminata.jpg"
+},
+{
+  title: "Jornada de Limpieza Comunitaria",
+  desc: "Evento en el que voluntarios se unen para limpiar espacios públicos, fomentando el trabajo en equipo y el compromiso ciudadano con el cuidado del entorno.",
+  image: "/img/limpiezacalle.jpg"
+}
+]
 },
 eventos: {
   title: "Agenda de eventos UDAC",
