@@ -396,8 +396,6 @@ eventos: {
     highlight: {
       title: "Únete al cambio",
       text: "Cada acción cuenta. Participa en nuestros eventos y ayuda a transformar el medio ambiente en Honduras.",
-      button: "Quiero participar",
-      link: "contactanos.html",
       bg: "/video/naturaleza.gif"
     },
 
